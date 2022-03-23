@@ -35,7 +35,7 @@ export default function Home() {
         {/*This is just a spacer*/}
         <div></div>
         </div>
-        <div className="sm:place-self-end flex flex-col justify-end items-center">
+        <div className="sm:place-self-end flex flex-col sm:justify-end items-center sm:mr-4">
           <Link href="/experience">
             <a className="text-myred hover:opacity-60 font-bold">
             experience
