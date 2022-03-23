@@ -19,7 +19,7 @@ export default function Home() {
           currently a data scientist at{' '}
           <a 
             className="text-myred-500 hover:opacity-60 font-bold"
-            href="https://delafields.github.io/" target="_blank">@bloomberg</a>
+            href="https://delafields.github.io/" target="_blank" rel="noreferrer">@bloomberg</a>
           <br/>
           <Link href="/IRLprojects">
             <a className="text-myred hover:opacity-60 font-bold">
@@ -43,12 +43,16 @@ export default function Home() {
           </Link>
           <a 
             className="text-myred hover:opacity-60 font-bold my-1"
-            href="https://twitter.com/DeLaFields">
+            href="https://twitter.com/DeLaFields"
+            target="_blank" rel="noreferrer"  
+          >
             twitter
           </a>
           <a 
             className="text-myred hover:opacity-60 font-bold"  
-            href="/https://github.com/delafields">
+            href="/https://github.com/delafields"
+            target="_blank" rel="noreferrer"
+          >
             github
           </a>
         </div>

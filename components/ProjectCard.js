@@ -1,4 +1,5 @@
 import { YoutubeFilled, GithubFilled, CameraFilled } from '@ant-design/icons'
+import Image from 'next/image'
 
 export default function ProjectCard({ 
   type, title, description, imgSrc, date, youtubeLink, githubLink, imgurLink
@@ -6,7 +7,7 @@ export default function ProjectCard({
 
   return (
     <div className="bg-white shadow-md sm:max-w-l p-2 flex flex-col rounded-lg cursor-pointer hover:shadow-lg">
-      <img 
+      <Image 
         // className="h-full object-contain" 
         className="w-full h-4/6"
         src={imgSrc}
