@@ -6,8 +6,8 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'paper': "url(../assets/natural-paper.png)",
-        'paper-stripes': "url(../assets/natural-paper.png), url(../assets/background-stripes.svg)"
+        'paper': "url(../public/natural-paper.png)",
+        'paper-stripes': "url(../public/natural-paper.png), url(../public/background-stripes.svg)"
       },
       colors: {
         'myred': '#ff0000',
