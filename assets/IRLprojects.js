@@ -1,13 +1,13 @@
 const projectsData = [
   {
     title: 'Mod Hat Racks',
-    description: 'Compact, modular lid racks',
+    description: "Compact, modular hat racks (excuse the hair, my parent's have huskies)",
     imgSrc: '/projectImages/hat-racks.jpg',
     date: '5/28/2020'
   },
   {
     title: 'Bike Utility Strap',
-    description: 'A leather bike strap for carrying a sixer',
+    description: 'Leather bike straps for carrying something cool like a sixer or a lance or just an umbrella (you could probably joust with these things)',
     imgSrc: '/projectImages/bike-strap.jpg',
     date: '5/20/2020'
   },
@@ -45,7 +45,7 @@ const projectsData = [
   },
   {
     title: 'Standing Desk',
-    description: 'No one told me a desk job means losing your back',
+    description: 'FIGHT BACK AGAINST BACK PAIN',
     imgSrc: '/projectImages/standing-desk.jpeg' ,
     imgurLink: 'https://imgur.com/a/PxWC6',
     date: '5/20/2017'

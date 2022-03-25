@@ -1,3 +1,5 @@
+const defaultTheme = require('tailwindcss/defaultTheme');
+
 module.exports = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx}",
@@ -14,7 +16,7 @@ module.exports = {
         'mycream': "#fef8ee"
       },
       fontFamily: {
-        title: ['Anton', 'sans-serif']
+        serif: ['Lexend', ...defaultTheme.fontFamily.serif]
       },
       borderWidth: {
         '20': '20px'

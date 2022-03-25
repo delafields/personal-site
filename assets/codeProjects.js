@@ -1,57 +1,67 @@
 const projectsData = [
   {
+    title: 'Data Science Portfolio',
+    description: 'Projects from the data science season of my life. Contains some cool analyses, statistial models and GPT-2 trained on Charles Manson interviews.',
+    githubLink: 'https://github.com/delafields/delafields.github.io',
+    date: '2020-2022'
+  },
+  {
+    title: 'JokePT-2',
+    description: 'Trained a BERT model on yo momma jokes & charlie manson interviews',
+    githubLink: 'https://github.com/delafields/delafields.github.io/tree/master/JokePT2',
+    date: '9/21/2021'
+  },
+  {
+    title: 'EPL Monte Carlo',
+    description: 'Predicting the results of the EPL season with Monte Carlo Simulations',
+    githubLink: 'https://github.com/delafields/delafields.github.io/tree/master/epl-monte-carlo',
+    date: '9/15/2021'
+  },
+  {
     title: 'Atom Material Colors',
     description: 'An Atom plugin that displays and autocompletes Material Design Colors',
-    imgSrc: '/projectImages/atom-material-colors.png',
     githubLink: 'https://github.com/delafields/atom-material-colors',
     date: '1/16/2018'
   },
   {
     title: 'Favoritify',
     description: 'Spotify Wrapped before Spotify Wrapped',
-    imgSrc: '/projectImages/favoritify.png',
     githubLink: 'https://github.com/delafields/Favoritify',
     date: '12/8/2017'
   },
   {
     title: 'WOD scraper',
-    description: 'Texts me my local gyms public WOD every morning',
-    imgSrc: '/projectImages/wod-scraper.jpg',
+    description: "Too 🅱️roke to afford a crossfit membership so I made a bot that texts me my local gym's public WOD every morning",
     githubLink: 'https://github.com/delafields/GymScraper',
     date: '10/2/2018'
   },
   {
     title: 'Help plz',
-    description: 'CLI tool for fuzzy searching docs, SO, npm',
-    imgSrc: '/projectImages/terminal.png',
+    description: 'CLI tool for fuzzy searching docs, stackoverflow, google, npm',
     githubLink: 'https://github.com/delafields/CLI/tree/master/HelpPlz',
     date: '1/15/2018'
   },
   {
     title: 'Nokiacoin',
     description: 'A bot that tweeted the price of BTC in terms of Nokia cell model numbers. BTC has long since yeeted itself out of range.',
-    imgSrc: '/projectImages/nokiacoin.png',
     githubLink: 'https://github.com/delafields/Nokiacoin',
     date: '4/29/2018'
   },
   {
     title: 'Rap Adlibs',
-    description: 'Alexa yells rap adlibs at you until you can guess who it is',
-    imgSrc: '/projectImages/rap-adlibs.jpg',
+    description: 'Alexa yells rap adlibs at you until you can guess who it is. So like, alexa say "DALE", u say "Mr. Worldwide"',
     githubLink: 'https://github.com/delafields/alexa-skills/tree/master/rap_adlibs',
     date: '1/16/2018'
   },
   {
     title: 'Screenshotta',
     description: 'CLI tool for anonymously hosting screenshots',
-    imgSrc: '/projectImages/terminal.png',
     githubLink: 'https://github.com/delafields/CLI/tree/master/Screenshotta',
     date: '1/7/2018'
   },
   {
     title: 'Smart Mirror',
     description: 'An mirror that displayed my stonks, the weather & my calendar',
-    imgSrc: '/projectImages/smart-mirror.png',
     githubLink: 'https://github.com/delafields/smartmirror-react',
     date: '10/25/2018'
   }

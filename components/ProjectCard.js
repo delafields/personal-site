@@ -6,14 +6,19 @@ export default function ProjectCard({
 }) {
 
   return (
-    <div className="bg-white shadow-md sm:max-w-l p-2 flex flex-col rounded-lg cursor-pointer hover:shadow-lg">
+    <div className="bg-white shadow-md w-3/4 sm:w-1/2 md:1/4 max-w-md max-h-96 p-2 flex flex-col my-2 rounded-lg cursor-pointer hover:shadow-lg">
+      {imgSrc ?
       <Image 
-        // className="h-full object-contain" 
-        width="100%" height="100%" layout="responsive" objectFit="contain"
+        width="100%" 
+        height="100%" 
+        layout="responsive" 
+        objectFit="contain"
         className="w-full h-4/6"
         src={imgSrc}
         alt={title} 
       />
+        : null 
+      }
       <div className="flex flex-col grow justify-around">
         <div className="flex content-center items-center mt-2">
           <h5 className="lg:text-2xl font-bold uppercase">
