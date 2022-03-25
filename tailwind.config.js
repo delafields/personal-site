@@ -15,6 +15,9 @@ module.exports = {
       },
       fontFamily: {
         title: ['Anton', 'sans-serif']
+      },
+      borderWidth: {
+        '20': '20px'
       }
     }
   },

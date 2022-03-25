@@ -4,7 +4,7 @@ import styles from '../styles/Home.module.css'
 
 export default function Home() {
   return (
-    <div className="w-screen h-screen min-h-full box-border overflow-hidden">
+    <div className="w-screen h-screen min-h-full box-border border-20 border-white overflow-hidden">
       <Head>
         <title>Jeremy Fields</title>
         <meta name="jeremy fields" content="personal site" />
@@ -12,7 +12,7 @@ export default function Home() {
       </Head>
 
       <main 
-        className="min-h-full p-2 bg-paper-stripes grid grid-rows-[1fr_1fr_4fr] sm:grid-rows-[1fr_4fr_1fr]"
+        className="min-h-full p-2 sm:rounded bg-paper-stripes grid grid-rows-[1fr_1fr_4fr] sm:grid-rows-[1fr_4fr_1fr]"
         >
         <div className="pl-4 pt-2">
           jeremy fields<br/>

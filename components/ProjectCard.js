@@ -9,6 +9,7 @@ export default function ProjectCard({
     <div className="bg-white shadow-md sm:max-w-l p-2 flex flex-col rounded-lg cursor-pointer hover:shadow-lg">
       <Image 
         // className="h-full object-contain" 
+        width="100%" height="100%" layout="responsive" objectFit="contain"
         className="w-full h-4/6"
         src={imgSrc}
         alt={title} 
