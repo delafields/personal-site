@@ -35,7 +35,7 @@ export default function Home() {
         {/*This is just a spacer*/}
         <div></div>
         </div>
-        <div className="sm:place-self-end flex flex-col sm:justify-end items-center sm:mr-4">
+        <div className="sm:place-self-end flex flex-col sm:justify-end items-center mt-6 sm:mt-0 sm:mr-4">
           <Link href="/experience">
             <a className="text-myred hover:opacity-60 font-bold">
             experience
@@ -50,7 +50,7 @@ export default function Home() {
           </a>
           <a 
             className="text-myred hover:opacity-60 font-bold"  
-            href="/https://github.com/delafields"
+            href="https://github.com/delafields"
             target="_blank" rel="noreferrer"
           >
             github
