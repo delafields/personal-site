@@ -18,6 +18,7 @@ export default function codeprojects() {
             youtubeLink={project.youtubeLink}
             githubLink={project.githubLink}
             imgurLink={project.imgurLink}
+            websiteLink={project.websiteLink}
           />
           )
         }

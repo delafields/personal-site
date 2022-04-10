@@ -1,8 +1,9 @@
-import { YoutubeFilled, GithubFilled, CameraFilled } from '@ant-design/icons'
+import { CgWebsite } from "react-icons/cg";
+import { SiYoutube, SiImgur, SiGithub } from 'react-icons/si';
 import Image from 'next/image'
 
 export default function ProjectCard({ 
-  type, title, description, imgSrc, date, youtubeLink, githubLink, imgurLink
+  type, title, description, imgSrc, date, youtubeLink, githubLink, imgurLink, websiteLink
 }) {
 
   return (
@@ -20,13 +21,14 @@ export default function ProjectCard({
         : null 
       }
       <div className="flex flex-col grow justify-around">
-        <div className="flex content-center items-center mt-2">
+        <div className="flex content-center items-center justify-between mt-2">
           <h5 className="lg:text-2xl font-bold uppercase">
             {title}
           </h5>
+          <div className="flex">
           {
             youtubeLink ?
-            (<YoutubeFilled 
+            (<SiYoutube 
               className="cursor-pointer hover:opacity-60 m-2"
               style={{ fontSize: '18px', color: 'red' }}
               onClick={()=> window.open(youtubeLink, "_blank")}
@@ -34,7 +36,7 @@ export default function ProjectCard({
           }
           {
             githubLink ?
-            (<GithubFilled 
+            (<SiGithub 
               className="cursor-pointer hover:opacity-60 m-2"
               style={{ fontSize: '18px', color: 'black' }}
               onClick={()=> window.open(youtubeLink, "_blank")}
@@ -42,12 +44,21 @@ export default function ProjectCard({
           }
           {
             imgurLink ?
-            (<CameraFilled 
+            (<SiImgur 
               className="cursor-pointer hover:opacity-60 m-2"
-              style={{ fontSize: '18px', color: 'black' }}
+              style={{ fontSize: '18px', color: '#89C623' }}
               onClick={()=> window.open(imgurLink, "_blank")}
             />) : null
           }
+          {
+            websiteLink ?
+            (<CgWebsite 
+              className="cursor-pointer hover:opacity-60 m-2"
+              style={{ fontSize: '18px', color: 'blue' }}
+              onClick={()=> window.open(websiteLink, "_blank")}
+            />) : null
+          }
+          </div>
           </div>
         <p className="">{description}</p>
       <div className="border-t-2 border-slate-700 mt-2 text-center">
@@ -57,46 +68,3 @@ export default function ProjectCard({
   </div>
   )
 }
-
-{/* <div className="bg-white h-full max-w-md shadow-md p-2 flex flex-col rounded-lg cursor-pointer hover:shadow-lg">
-<img 
-  className="h-3/6" 
-  src={imgSrc}
-  alt={title} 
-/>
-<div className="flex flex-col">
-  <div className="flex content-center items-center mt-2">
-    <h5 className="text-2xl font-bold uppercase">
-      {title}
-    </h5>
-    {
-      youtubeLink ?
-      (<YoutubeFilled 
-        className="cursor-pointer hover:opacity-60 m-2"
-        style={{ fontSize: '18px', color: 'red' }}
-        onClick={()=> window.open(youtubeLink, "_blank")}
-      />) : null
-    }
-    {
-      githubLink ?
-      (<GithubFilled 
-        className="cursor-pointer hover:opacity-60 m-2"
-        style={{ fontSize: '18px', color: 'black' }}
-        onClick={()=> window.open(youtubeLink, "_blank")}
-      />) : null
-    }
-    {
-      imgurLink ?
-      (<CameraFilled 
-        className="cursor-pointer hover:opacity-60 m-2"
-        style={{ fontSize: '18px', color: 'black' }}
-        onClick={()=> window.open(imgurLink, "_blank")}
-      />) : null
-    }
-    </div>
-  <p className="">{description}</p>
-<div className="border-t-2 border-slate-700 mt-2 text-center">
-  <p className="mt-2">{date}</p>
-</div>
-</div>
-</div> */}
