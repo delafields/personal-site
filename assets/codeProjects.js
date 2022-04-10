@@ -1,5 +1,20 @@
 const projectsData = [
   {
+    title: 'Frens',
+    description: 'Frens lets you keep an on-chain fren list of your favorite crypto buddies and their wallet addresses.',
+    githubLink: 'https://github.com/delafields/frens',
+    websiteLink: 'https://www.frenlist.lol/',
+    imgSrc: '/projectImages/frens.png',
+    date: '4/20/2022'
+  },
+  {
+    title: 'Personal Site Rebuild',
+    description: 'Simplified this site. Vue -> React. Next.js as the framework, tailwind.css for styling.',
+    githubLink: 'https://github.com/delafields/personal-site',
+    websiteLink: 'https://www.jeremyfields.xyz',
+    date: '3/14/2022'
+  },
+  {
     title: 'Data Science Portfolio',
     description: 'Projects from the data science season of my life. Contains some cool analyses, statistial models and GPT-2 trained on Charles Manson interviews.',
     githubLink: 'https://github.com/delafields/delafields.github.io',
@@ -27,6 +42,7 @@ const projectsData = [
     title: 'Favoritify',
     description: 'Spotify Wrapped before Spotify Wrapped',
     githubLink: 'https://github.com/delafields/Favoritify',
+    websiteLink: 'https://favoritify.herokuapp.com/',
     date: '12/8/2017'
   },
   {

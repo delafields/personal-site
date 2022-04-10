@@ -1,5 +1,12 @@
 const projectsData = [
   {
+    title: 'Garden Box',
+    description: 'A standing (see standing desk description) garden box. I\'ll add a photo with veg depending on the color of my thumb.',
+    imgSrc: '/projectImages/garden-box.jpeg',
+    imgurLink: 'https://imgur.com/gallery/UIN0oow',
+    date: '3/28/2022'
+  },
+  {
     title: 'Mod Hat Racks',
     description: "Compact, modular hat racks (excuse the hair, my parent's have huskies)",
     imgSrc: '/projectImages/hat-racks.jpg',
