@@ -4,9 +4,9 @@ export default function ProjectWrapper({ pageTitle, children }) {
   return (
     <div className="min-h-screen py-10 bg-mycream bg-paper flex flex-col font-['Lexend']">
       <div className="flex flex-col items-center justify-between">
-        <h1 className="text-myred text-2xl font-bold mb-4">{pageTitle}</h1>
+        <h1 className="mb-4 text-2xl font-bold text-myred">{pageTitle}</h1>
         <Link href="/">
-          <a className="hover:opacity-60 font-bold">home</a>
+          <a className="font-bold hover:opacity-60">home</a>
         </Link>
       </div>
       <div className="flex flex-col items-center pt-8">

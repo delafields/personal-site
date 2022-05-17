@@ -4,15 +4,15 @@ import experienceData from "../assets/experience.js"
 export default function experience() {
   return (
     <div 
-      className="min-h-screen py-10 bg-mycream bg-paper flex flex-col p-4"
+      className="flex flex-col min-h-screen p-4 py-10 bg-mycream bg-paper"
       style={{border: '20px solid white'}}    
     >
     <div className="text-center">
       <Link href="/">
-        <a className="hover:opacity-60 font-bold">home</a>
+        <a className="font-bold hover:opacity-60">home</a>
       </Link>
     </div>
-    <div className="grow flex justify-center items-center">
+    <div className="flex items-center justify-center grow">
       <ul>
         {experienceData.map(({ date, text }) =>
           <li 

@@ -7,7 +7,7 @@ export default function ProjectCard({
 }) {
 
   return (
-    <div className="bg-white shadow-md w-3/4 sm:w-1/2 md:1/4 max-w-md max-h-96 p-2 flex flex-col my-2 rounded-lg cursor-pointer hover:shadow-lg">
+    <div className="flex flex-col w-3/4 max-w-md p-2 my-2 bg-white rounded-lg shadow-md cursor-pointer sm:w-1/2 md:1/4 max-h-96 hover:shadow-lg">
       {imgSrc ?
       <Image 
         width="100%" 
@@ -20,16 +20,16 @@ export default function ProjectCard({
       />
         : null 
       }
-      <div className="flex flex-col grow justify-around">
-        <div className="flex content-center items-center justify-between mt-2">
-          <h5 className="lg:text-2xl font-bold uppercase">
+      <div className="flex flex-col justify-around grow">
+        <div className="flex items-center content-center justify-between mt-2">
+          <h5 className="font-bold uppercase lg:text-2xl">
             {title}
           </h5>
           <div className="flex">
           {
             youtubeLink ?
             (<SiYoutube 
-              className="cursor-pointer hover:opacity-60 m-2"
+              className="m-2 cursor-pointer hover:opacity-60"
               style={{ fontSize: '18px', color: 'red' }}
               onClick={()=> window.open(youtubeLink, "_blank")}
             />) : null
@@ -37,7 +37,7 @@ export default function ProjectCard({
           {
             githubLink ?
             (<SiGithub 
-              className="cursor-pointer hover:opacity-60 m-2"
+              className="m-2 cursor-pointer hover:opacity-60"
               style={{ fontSize: '18px', color: 'black' }}
               onClick={()=> window.open(youtubeLink, "_blank")}
             />) : null
@@ -45,7 +45,7 @@ export default function ProjectCard({
           {
             imgurLink ?
             (<SiImgur 
-              className="cursor-pointer hover:opacity-60 m-2"
+              className="m-2 cursor-pointer hover:opacity-60"
               style={{ fontSize: '18px', color: '#89C623' }}
               onClick={()=> window.open(imgurLink, "_blank")}
             />) : null
@@ -53,7 +53,7 @@ export default function ProjectCard({
           {
             websiteLink ?
             (<CgWebsite 
-              className="cursor-pointer hover:opacity-60 m-2"
+              className="m-2 cursor-pointer hover:opacity-60"
               style={{ fontSize: '18px', color: 'blue' }}
               onClick={()=> window.open(websiteLink, "_blank")}
             />) : null
@@ -61,7 +61,7 @@ export default function ProjectCard({
           </div>
           </div>
         <p className="">{description}</p>
-      <div className="border-t-2 border-slate-700 mt-2 text-center">
+      <div className="mt-2 text-center border-t-2 border-slate-700">
         <p className="mt-2">{date}</p>
       </div>
     </div>
