@@ -8,7 +8,7 @@ const projectsData = [
   },
   {
     title: 'Mod Hat Racks',
-    description: "Compact, modular hat racks (excuse the hair, my parent's have huskies)",
+    description: "Compact, modular hat racks (excuse the hair, my parents have huskies)",
     imgSrc: '/projectImages/hat-racks.jpg',
     date: '5/28/2020'
   },
