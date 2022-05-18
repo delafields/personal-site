@@ -1,8 +1,13 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import styles from '../styles/Home.module.css'
+import useSound from 'use-sound';
+import drillSfx from '../public/sounds/drill.mp3';
+import keyboardSfx from '../public/sounds/keyboard.mp3';
 
 export default function Home() {
+  const [playDrill] = useSound(drillSfx);
+  const [playKeyboard] = useSound(keyboardSfx);
+
   return (
     <div className="box-border w-screen h-screen min-h-full overflow-hidden border-white border-20">
       <Head>
@@ -16,24 +21,29 @@ export default function Home() {
         >
         <div className="pt-2 pl-4">
           jeremy fields<br/>
-          currently a data scientist at{' '}
+          currently a {' '}
           <a 
             className="font-bold text-myred-500 hover:opacity-60"
-            href="https://delafields.github.io/" target="_blank" rel="noreferrer">@bloomberg</a>
+            href="https://delafields.github.io/" 
+            target="_blank" 
+            rel="noreferrer"
+          >
+            data scientist
+          </a>
+          {' '}@bloomberg
           <br/>
           <Link href="/IRLprojects">
-            <a className="font-bold text-myred hover:opacity-60">
+            <a className="font-bold text-myred hover:opacity-60 cursor-drill" onMouseEnter={playDrill}>
             IRL projects
             </a>
           </Link>
           {' / '}
           <Link href="/codeProjects">
-            <a className="font-bold text-myred hover:opacity-60">
+            <a className="font-bold text-myred hover:opacity-60 cursor-imac"  onMouseEnter={playKeyboard}>
             code projects
             </a>
           </Link>
-        {/*This is just a spacer*/}
-        <div></div>
+          <></> {/*This is just a spacer*/}
         </div>
         <div className="flex flex-col items-center mt-6 sm:place-self-end sm:justify-end sm:mt-0 sm:mr-4">
           <Link href="/experience">

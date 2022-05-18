@@ -8,8 +8,8 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'paper': "url(/natural-paper.png)",
-        'paper-stripes': "url(/natural-paper.png), url(/background-stripes.svg)"
+        'paper': "url(/bgImages/natural-paper.png)",
+        'paper-stripes': "url(/bgImages/natural-paper.png), url(/bgImages/background-stripes.svg)"
       },
       colors: {
         'myred': '#ff0000',
@@ -20,6 +20,10 @@ module.exports = {
       },
       borderWidth: {
         '20': '20px'
+      },
+      cursor: {
+        'drill': 'url(/cursors/Drill.cur), pointer',
+        'imac': 'url(/cursors/IMAC.cur), pointer'
       }
     }
   },
