@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 export default function ProjectWrapper({ pageTitle, children }) {
 
-  const stripePaletts = [
+  const stripePalettes = [
     // red blue green (homepage)
     ["rgb(244,0,0)", "rgb(54,33,255)", "rgb(86,255,55)"],
     // red rellow blue (hat rack)
@@ -15,7 +15,7 @@ export default function ProjectWrapper({ pageTitle, children }) {
     ["#6A67CE", "#947EC3", "#B689C0"],
   ]
   // randomize the palettes, the first in the list gets rendered
-  const shuffledPaletts = stripePaletts.sort((a, b) => 0.5 - Math.random());
+  const shuffledPalettes = stripePalettes.sort((a, b) => 0.5 - Math.random());
 
   return (
     <div className="min-h-screen py-10 bg-mycream bg-paper flex flex-col font-['Lexend'] z-0">
@@ -35,7 +35,7 @@ export default function ProjectWrapper({ pageTitle, children }) {
             d="M0,304C0,304 366.583,62.641 782,304" 
             fill="none"
             // stroke="rgb(244,0,0)"
-            stroke={shuffledPallets[0][0]}
+            stroke={shuffledPalettes[0][0]}
             strokeWidth="21.66px"
           />
         </g>
@@ -44,7 +44,7 @@ export default function ProjectWrapper({ pageTitle, children }) {
             d="M0,327C0,327 362.48,80.391 782,327" 
             fill="none"
             // stroke="rgb(54,33,255)"
-            stroke={shuffledPallets[0][1]}
+            stroke={shuffledPalettes[0][1]}
             strokeWidth="21.66px"
           />
         </g>
@@ -53,7 +53,7 @@ export default function ProjectWrapper({ pageTitle, children }) {
             d="M0,350C0,350 384.48,95.725 780,350" 
             fill="none"
             // stroke="rgb(86,255,55)"
-            stroke={shuffledPallets[0][2]}
+            stroke={shuffledPalettes[0][2]}
             strokeWidth="21.66px"
           />
         </g>
