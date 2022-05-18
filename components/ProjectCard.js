@@ -3,21 +3,29 @@ import { SiYoutube, SiImgur, SiGithub } from 'react-icons/si';
 import Image from 'next/image'
 
 export default function ProjectCard({ 
-  type, title, description, imgSrc, date, youtubeLink, githubLink, imgurLink, websiteLink
+  type, 
+  title, 
+  description, 
+  imgSrc, 
+  date, 
+  youtubeLink, 
+  githubLink, 
+  imgurLink, 
+  websiteLink
 }) {
 
   return (
-    <div className="flex flex-col w-3/4 max-w-md p-2 my-2 bg-white rounded-lg shadow-md cursor-pointer sm:w-1/2 md:1/4 max-h-96 hover:shadow-lg">
+    <div className="flex flex-col w-3/4 max-w-md p-2 my-2 bg-white rounded-lg shadow-md sm:w-1/2 md:1/4 max-h-96 hover:shadow-lg">
       {imgSrc ?
-      <Image 
-        width="100%" 
-        height="100%" 
-        layout="responsive" 
-        objectFit="contain"
-        className="w-full h-4/6"
-        src={imgSrc}
-        alt={title} 
-      />
+        <Image 
+          width="100%" 
+          height="100%" 
+          layout="responsive" 
+          objectFit="contain"
+          className="w-full h-4/6"
+          src={imgSrc}
+          alt={title} 
+        />
         : null 
       }
       <div className="flex flex-col justify-around grow">
