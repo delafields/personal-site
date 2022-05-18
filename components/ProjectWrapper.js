@@ -4,7 +4,7 @@ export default function ProjectWrapper({ pageTitle, children }) {
 
   const stripePalettes = [
     // red blue green (homepage)
-    ["rgb(244,0,0)", "rgb(54,33,255)", "rgb(86,255,55)"],
+    ["#EB5353", "#187498", "#36AE7C"],
     // red rellow blue (hat rack)
     ["#F44129", "#F5B925", "#1F4888"],
     // turq red orange (70's)
@@ -20,8 +20,6 @@ export default function ProjectWrapper({ pageTitle, children }) {
   return (
     <div className="min-h-screen py-10 bg-mycream bg-paper flex flex-col font-['Lexend'] z-0">
       <svg 
-        width="100%" 
-        height="100%" 
         viewBox="0 0 768 600"
         version="1.1" 
         xmlns="http://www.w3.org/2000/svg" 
@@ -34,7 +32,6 @@ export default function ProjectWrapper({ pageTitle, children }) {
           <path 
             d="M0,304C0,304 366.583,62.641 782,304" 
             fill="none"
-            // stroke="rgb(244,0,0)"
             stroke={shuffledPalettes[0][0]}
             strokeWidth="21.66px"
           />
@@ -43,7 +40,6 @@ export default function ProjectWrapper({ pageTitle, children }) {
           <path 
             d="M0,327C0,327 362.48,80.391 782,327" 
             fill="none"
-            // stroke="rgb(54,33,255)"
             stroke={shuffledPalettes[0][1]}
             strokeWidth="21.66px"
           />
@@ -52,7 +48,6 @@ export default function ProjectWrapper({ pageTitle, children }) {
           <path 
             d="M0,350C0,350 384.48,95.725 780,350" 
             fill="none"
-            // stroke="rgb(86,255,55)"
             stroke={shuffledPalettes[0][2]}
             strokeWidth="21.66px"
           />

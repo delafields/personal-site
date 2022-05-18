@@ -21,3 +21,19 @@ a {
 * {
   box-sizing: border-box;
 }
+
+/* 
+keeping this around in case anything breaks with the rainbow
+#rainbow {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 999;
+  width: 100vw;
+  opacity: 0.25;
+  pointer-events: none;
+  transform: translateY(0px);
+  filter: contrast(120%) brightness(120%);
+  display: inline-block;
+  vertical-align: middle;
+} */
