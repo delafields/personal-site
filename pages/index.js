@@ -1,12 +1,18 @@
 import Head from 'next/head'
 import Link from 'next/link'
+import { useEffect, useState } from 'react';
 import useSound from 'use-sound';
 import drillSfx from '../public/sounds/drill.mp3';
 import keyboardSfx from '../public/sounds/keyboard.mp3';
+import useSWR from 'swr';
+import fetcher from '../lib/fetcher';
+
 
 export default function Home() {
   const [playDrill] = useSound(drillSfx);
   const [playKeyboard] = useSound(keyboardSfx);
+  const { topTracks } = useSWR('/api/top-tracks', fetcher);
+  const { recentTracks } = useSWR('/api/recent-tracks', fetcher);
 
   return (
     <div className="box-border w-screen h-screen min-h-full overflow-hidden border-white border-20">
@@ -39,8 +45,14 @@ export default function Home() {
           </Link>
           {' / '}
           <Link href="/codeProjects">
-            <a className="font-bold text-myred hover:opacity-60 cursor-imac"  onMouseEnter={playKeyboard}>
+            <a className="font-bold text-myred hover:opacity-60 cursor-imac" onMouseEnter={playKeyboard}>
             code projects
+            </a>
+          </Link>
+          {' / '}
+          <Link href="/tunes">
+            <a className="font-bold text-myred hover:opacity-60">
+            tunes
             </a>
           </Link>
           <></> {/*This is just a spacer*/}

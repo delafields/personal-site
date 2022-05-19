@@ -9,7 +9,7 @@ module.exports = {
         filename: "static/chunks/[path][name].[hash][ext]",
       },
     });
-
+    
     return config;
   },
 };
