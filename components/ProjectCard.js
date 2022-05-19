@@ -15,7 +15,7 @@ export default function ProjectCard({
 }) {
 
   return (
-    <div className="flex flex-col w-3/4 max-w-md p-2 my-2 bg-white rounded-lg shadow-md sm:w-1/2 md:1/4 max-h-96 hover:shadow-lg">
+    <div className="flex flex-col w-3/4 max-w-md p-2 my-2 rounded-lg shadow-md bg-noise sm:w-1/2 md:1/4 max-h-96 hover:shadow-lg">
       {imgSrc ?
         <Image 
           width="100%" 

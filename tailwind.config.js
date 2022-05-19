@@ -9,7 +9,8 @@ module.exports = {
     extend: {
       backgroundImage: {
         'paper': "url(/bgImages/natural-paper.png)",
-        'paper-stripes': "url(/bgImages/natural-paper.png), url(/bgImages/background-stripes.svg)"
+        'paper-stripes': "url(/bgImages/natural-paper.png), url(/bgImages/background-stripes.svg)",
+        'noise': "url(/bgImages/noise.png)"
       },
       colors: {
         'myred': '#ff0000',

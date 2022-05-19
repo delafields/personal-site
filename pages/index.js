@@ -49,7 +49,6 @@ export default function Home() {
             tunes
             </a>
           </Link>
-          <></> {/*This is just a spacer*/}
         </div>
         <div className="flex flex-col items-center mt-6 sm:place-self-end sm:justify-end sm:mt-0 sm:mr-4">
           <Link href="/experience">
