@@ -25,7 +25,11 @@ module.exports = {
       cursor: {
         'drill': 'url(/cursors/Drill.cur), pointer',
         'imac': 'url(/cursors/IMAC.cur), pointer'
-      }
+      },
+      screens: {
+        'xs': '475px',
+        ...defaultTheme.screens,
+      },
     }
   },
   plugins: [],

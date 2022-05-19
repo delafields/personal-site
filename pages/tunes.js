@@ -7,7 +7,7 @@ export default function tunes() {
 
     return (
         <ProjectWrapper pageTitle="tunes">
-            <div className="flex">
+            <div className="flex flex-col justify-around max-w-screen-md md:w-full md:flex-row">
                 <RecentTracks/>
                 <TopTracks/>
             </div>
