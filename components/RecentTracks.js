@@ -9,13 +9,13 @@ export default function RecentTracks() {
     }
     
     return (
-      <div className="p-2 rounded-lg shadow-md bg-noise w-80">
+      <div className="max-w-4xl p-2 rounded-lg shadow-md bg-noise w-96">
       <p className="font-black text-center">
         what i'm listening to now
       </p>
       {data.tracks.map((track, index) => (
           <div 
-              className="flex flex-row items-baseline w-full max-w-3xl mt-8 border-b border-gray-200 last:border-0"
+              className="flex flex-row items-baseline w-full mt-8 border-b border-gray-200 last:border-0"
               key={index}
           >
               <div className="flex flex-col pl-3">
