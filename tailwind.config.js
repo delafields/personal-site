@@ -24,7 +24,8 @@ module.exports = {
       },
       cursor: {
         'drill': 'url(/cursors/Drill.cur), pointer',
-        'imac': 'url(/cursors/IMAC.cur), pointer'
+        'imac': 'url(/cursors/IMAC.cur), pointer',
+        'music': 'url(/cursors/music.cur), pointer'
       },
       screens: {
         'xs': '475px',

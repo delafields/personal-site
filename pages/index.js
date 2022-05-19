@@ -45,7 +45,7 @@ export default function Home() {
           </Link>
           {' / '}
           <Link href="/tunes">
-            <a className="font-bold text-myred hover:opacity-60">
+            <a className="font-bold text-myred hover:opacity-60 cursor-music">
             tunes
             </a>
           </Link>
