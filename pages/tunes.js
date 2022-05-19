@@ -1,4 +1,6 @@
 import Link from 'next/link'
+import TopTracks from '../components/TopTracks'
+import RecentTracks from '../components/RecentTracks'
 
 export default function tunes() {
 
@@ -8,9 +10,8 @@ export default function tunes() {
             <Link href="/">
                 <a className="font-bold hover:opacity-60">home</a>
             </Link>
-            <p>
-                {/* {this.topTracks} */}
-            </p>
+            {/* <TopTracks/> */}
+            <RecentTracks/>
         </div>
 )
 }
