@@ -25,7 +25,7 @@ export default function ProjectWrapper({ pageTitle, children }) {
         xmlns="http://www.w3.org/2000/svg" 
         xmlnsXlink="http://www.w3.org/1999/xlink" 
         xmlSpace="preserve" 
-        className="fixed top-0 z-10 w-full opacity-50 pointer-events-none"
+        className="fixed top-0 z-10 w-full mt-40 opacity-50 pointer-events-none xs:mt-0"
         style={{filter: "contrast(120%) brightness(120%)"}}
       >
         <g transform="matrix(1,0,0,1,-7,0)">
