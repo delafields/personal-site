@@ -1,5 +1,26 @@
 const projectsData = [
   {
+    title: 'Dino Rattle',
+    description: "I'm an uncle! A gift for Rory.",
+    imgSrc: '/projectImages/rawry.jpeg',
+    imgurLink: 'https://imgur.com/gallery/gZXafL8',
+    date: '6/7/2022'
+  },
+  {
+    title: 'Media Console',
+    description: 'Covid project. Walnut media console.',
+    imgSrc: '/projectImages/media-console.jpeg',
+    imgurLink: 'https://imgur.com/gallery/dhLDLeU',
+    date: '10/28/2020'
+  },
+  {
+    title: 'Coffee Table',
+    description: 'Covid project. Walnut coffee table.',
+    imgSrc: '/projectImages/coffee-table.jpeg',
+    imgurLink: 'https://imgur.com/gallery/dhLDLeU',
+    date: '10/28/2020'
+  },
+  {
     title: 'Garden Box',
     description: 'A standing (see standing desk description) garden box. I\'ll add a photo with veg depending on the color of my thumb.',
     imgSrc: '/projectImages/garden-box.jpeg',
