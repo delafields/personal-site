@@ -12,8 +12,11 @@ export default function experience() {
         <a className="font-bold hover:opacity-60">home</a>
       </Link>
     </div>
-    <div className="flex items-center justify-center grow">
-      <ul>
+    {/* <div className="max-w-4xl p-2 rounded-lg shadow-md bg-noise w-96"></div> */}
+    {/* <div className="flex items-center justify-center grow"> */}
+    <div className="flex flex-col items-center justify-center grow">
+      <ul className="p-2 rounded-lg shadow-md bg-noise">
+        <li className="pb-2 font-bold text-center">my timeline</li>
         {experienceData.map(({ date, text }) =>
           <li 
             className="py-2"

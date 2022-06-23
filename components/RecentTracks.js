@@ -9,7 +9,7 @@ export default function RecentTracks() {
     }
     
     return (
-      <div className="max-w-4xl p-2 rounded-lg shadow-md bg-noise w-96">
+      <div className="max-w-4xl p-2 rounded-lg shadow-md bg-noise w-80 sm:w-96">
       <p className="font-black text-center">
         what i'm listening to now
       </p>
