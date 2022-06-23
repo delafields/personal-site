@@ -9,7 +9,7 @@ const experienceData = [
   },
   {
     date: '- 2018: ',
-    text: `College, freelance front-end dev`
+    text: `College (started with Architecture left with Economics), freelance front-end dev`
   }
 ]
 
