@@ -17,7 +17,7 @@ export default function Home() {
       </Head>
 
       <main 
-        className="min-h-full p-2 sm:rounded bg-paper-stripes grid grid-rows-[1fr_1fr_4fr] sm:grid-rows-[1fr_4fr_1fr] font-['Lexend']"
+        className="min-h-full max-w-screen-2xl p-2 sm:rounded bg-paper-stripes grid grid-rows-[1fr_1fr_4fr] sm:grid-rows-[1fr_4fr_1fr] font-['Lexend']"
         >
         <div className="pt-2 pl-4">
           jeremy fields<br/>
