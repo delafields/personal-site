@@ -15,7 +15,7 @@ export default function TopTracks() {
             </p>
             {data.tracks.map((track, index) => (
                 <div 
-                    className="flex flex-row items-baseline w-full mt-8 border-b border-gray-200 last:border-0"
+                    className="flex flex-row items-center w-full border-b border-gray-200 h-28 last:border-0"
                     key={index}
                 >
                     <p className="text-sm font-bold text-gray-400">
@@ -31,7 +31,7 @@ export default function TopTracks() {
                         {track.title}
                     </a>
                     <p
-                        className="mb-4 text-gray-500 break-words w-60 sm:w-96 md:w-full"
+                        className="text-gray-500 break-words w-60 sm:w-96 md:w-full"
                         color="gray.500"
                     >
                         {track.artist}

@@ -15,7 +15,7 @@ export default function RecentTracks() {
       </p>
       {data.tracks.map((track, index) => (
           <div 
-              className="flex flex-row items-baseline w-full mt-8 border-b border-gray-200 last:border-0"
+              className="flex flex-row items-center w-full border-b border-gray-200 h-28 last:border-0"
               key={index}
           >
               <div className="flex flex-col pl-3">
