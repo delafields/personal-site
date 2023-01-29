@@ -1,12 +1,12 @@
 const projectsData = [
-  {
-    title: 'Frens',
-    description: 'Frens lets you keep an on-chain fren list of your favorite crypto buddies and their wallet addresses.',
-    githubLink: 'https://github.com/delafields/frens',
-    websiteLink: 'https://www.frenlist.lol/',
-    imgSrc: '/projectImages/frens.png',
-    date: '4/20/2022'
-  },
+  // {
+  //   title: 'Frens',
+  //   description: 'Frens lets you keep an on-chain fren list of your favorite crypto buddies and their wallet addresses.',
+  //   githubLink: 'https://github.com/delafields/frens',
+  //   websiteLink: 'https://www.frenlist.lol/',
+  //   imgSrc: '/projectImages/frens.png',
+  //   date: '4/20/2022'
+  // },
   {
     title: 'Personal Site Rebuild',
     description: 'Simplified this site. Vue -> React. Next.js as the framework, tailwind.css for styling.',
