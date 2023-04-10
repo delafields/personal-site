@@ -43,12 +43,14 @@ export default function Home() {
             code projects
             </a>
           </Link>
+          {/*
           {' / '}
           <Link href="/tunes">
             <a className="font-bold text-myred hover:opacity-60 cursor-music">
             tunes
             </a>
           </Link>
+          */}
         </div>
         <div className="flex flex-col items-center mt-6 sm:place-self-end sm:justify-end sm:mt-0 sm:mr-4">
           <Link href="/experience">
