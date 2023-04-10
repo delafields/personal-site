@@ -8,6 +8,7 @@ export default async function handler(_, res) {
     }
 
     const { items } = await response.json();
+    console.log(items)
     
     const tracks = items.slice(0, 10).map((track) => ({
         artist: track.track.artists.map((_artist) => _artist.name).join(', '),
