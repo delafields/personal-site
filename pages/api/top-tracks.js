@@ -3,7 +3,11 @@ import { getTopTracks } from '../../lib/spotify'
 
 export default async function handler(_, res) {
   const response = await getTopTracks();
-  // console.log(response) // I'm getting the 403 here
+
+  if (!response) {
+    return res.status(500).json({ error: 'Spotify not available' });
+  }
+
   const { items } = await response.json();
   
   const tracks = items.slice(0, 10).map((track) => ({
