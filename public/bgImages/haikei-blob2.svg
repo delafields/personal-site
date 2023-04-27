@@ -1,5 +1,59 @@
 <svg id="visual" viewBox="0 0 900 600" width="900" height="600" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
-<rect x="0" y="0" width="900" height="600" fill="#001220"></rect>
+    <rect x="0" y="0" width="900" height="600" fill="#001220" filter="url(#roughpaper-black)"></rect>
+    <defs>
+        <linearGradient id="grad1_0" x1="33.3%" y1="100%" x2="100%" y2="0%">
+        <stop offset="20%" stop-color="#001220" stop-opacity="1"></stop>
+        <stop offset="80%" stop-color="#001220" stop-opacity="1"></stop>
+        </linearGradient>
+    </defs>
+    <defs>
+        <linearGradient id="grad2_0" x1="0%" y1="100%" x2="66.7%" y2="0%">
+        <stop offset="20%" stop-color="#001220" stop-opacity="1"></stop>
+        <stop offset="80%" stop-color="#001220" stop-opacity="1"></stop>
+        </linearGradient>
+    </defs>
+    <g transform="translate(900, 600)" filter="url(#roughpaper-cream)">
+        <path 
+        d="M-411 0C-415.7 -58.6 -420.3 -117.3 -399.7 -165.6C-379.1 -213.9 -333.3 -251.9 -291.3 -291.3C-249.4 -330.8 -211.3 -371.6 -163.4 -394.5C-115.5 -417.3 -57.8 -422.2 0 -427L0 0Z" 
+        fill="#ffecca"></path>
+    </g>
+    <g transform="translate(0, 0)" filter="url(#roughpaper-cream)">
+        <path d="M432.7 0C421.5 55.7 410.2 111.5 388 160.7C365.8 210 332.6 252.8 294.9 294.9C257.1 336.9 214.8 378.3 164.9 398.2C115 418.1 57.5 416.5 0 415L0 0Z" 
+        fill="#ffecca"></path>
+    </g>
+
+    
+    <feTurbulence baseFrequency='0.04' result='noise' />
+    <!-- cream filter -->
+    <filter id='roughpaper-cream'>
+        <feTurbulence type="fractalNoise" baseFrequency='0.03' result='noise' numOctaves="5" />
+        <feDiffuseLighting in='noise' lighting-color="#ffecca" surfaceScale='2'>
+            <feDistantLight azimuth='45' elevation='60' />
+        </feDiffuseLighting>
+        <feComposite 
+            in="comp"
+            in2="SourceAlpha"
+            operator="in"
+        />
+    </filter>
+    <!-- black filter -->
+    <filter id='roughpaper-black'>
+        <feTurbulence type="fractalNoise" baseFrequency='0.04' result='noise' numOctaves="10" />
+        <feDiffuseLighting in='noise' lighting-color="#001220" surfaceScale='6'>
+            <feDistantLight azimuth='45' elevation='60' />
+        </feDiffuseLighting>
+        <feComposite 
+            in="comp"
+            in2="SourceAlpha"
+            operator="in"
+        />
+    </filter>
+</svg>
+
+<!-- original -->
+<!-- starting point: https://tympanus.net/codrops/2019/02/19/svg-filter-effects-creating-texture-with-feturbulence/ -->
+<!-- <svg id="visual" viewBox="0 0 900 600" width="900" height="600" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+<rect x="0" y="0" width="900" height="600" fill="#001220" filter="url(#roughpaper)"></rect>
 <defs>
 <linearGradient id="grad1_0" x1="33.3%" y1="100%" x2="100%" y2="0%">
 <stop offset="20%" stop-color="#001220" stop-opacity="1"></stop>
@@ -18,4 +72,17 @@
 <path d="M432.7 0C421.5 55.7 410.2 111.5 388 160.7C365.8 210 332.6 252.8 294.9 294.9C257.1 336.9 214.8 378.3 164.9 398.2C115 418.1 57.5 416.5 0 415L0 0Z" fill="#ffecca">
 </path>
 </g>
-</svg>
+
+<feTurbulence baseFrequency='0.04' result='noise' />
+
+<filter id='roughpaper' x='0%' y='0%' width='100%' height="100%">
+
+<feTurbulence type="fractalNoise" baseFrequency='0.04' result='noise' numOctaves="10" />
+
+<feDiffuseLighting in='noise' lighting-color='#001220' surfaceScale='6'>
+<feDistantLight azimuth='45' elevation='60' />
+</feDiffuseLighting>
+
+</filter>
+
+</svg> -->
