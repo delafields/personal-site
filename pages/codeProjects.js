@@ -2,7 +2,6 @@ import Link from 'next/link'
 import ProjectWrapper from "../components/ProjectWrapper"
 import ProjectCard from "../components/ProjectCard"
 import projectsData from "../assets/codeProjects.js"
-import styles from '../styles/Home.module.css'
 
 export default function codeprojects() {
   return (
@@ -15,10 +14,7 @@ export default function codeprojects() {
             description={project.description}
             imgSrc={project.imgSrc}
             date={project.date}
-            youtubeLink={project.youtubeLink}
-            githubLink={project.githubLink}
-            imgurLink={project.imgurLink}
-            websiteLink={project.websiteLink}
+            links={project.links}
           />
           )
         }

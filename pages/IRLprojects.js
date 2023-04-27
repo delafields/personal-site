@@ -15,10 +15,7 @@ export default function IRLprojects() {
             description={project.description}
             imgSrc={project.imgSrc}
             date={project.date}
-            youtubeLink={project.youtubeLink}
-            githubLink={project.githubLink}
-            imgurLink={project.imgurLink}
-            websiteLink={project.websiteLink}
+            links={project.links}
           />
           )
         }

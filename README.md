@@ -14,17 +14,15 @@ Experience page
   * ~~Try moving timeline box up higher~~
 
 Projects
-* try making projects filterable (keep the filter options MINIMAL)
-    * Code: data, web, mobile, cli
-    * IRL: wood, art?, this is probably too diverse to be able to put good filters on it
+* ~~re-design cards~~
 
 Mobile
-* center & bold name, center IRL projects below it
+* ~~center & bold name, center IRL projects below it~~
 * experience, twitter, github should be bottom center
 * try to figure out what's making pages > vh on mobile
 
 Desktop
-* IRL/code projects should display > 1 post per column
+* ~~IRL/code projects should display > 1 post per column~~
 
 Tunes
 * figure this shit out and make it work god damnit

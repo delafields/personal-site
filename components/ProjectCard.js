@@ -1,76 +1,53 @@
 import { CgWebsite } from "react-icons/cg";
 import { SiYoutube, SiImgur, SiGithub } from 'react-icons/si';
 import Image from 'next/image'
+import Link from 'next/link'
 
 export default function ProjectCard({ 
   type, 
   title, 
   description, 
   imgSrc, 
-  date, 
-  youtubeLink, 
-  githubLink, 
-  imgurLink, 
-  websiteLink
+  date,
+  links
 }) {
 
+  
   return (
-    <div className="flex flex-col w-3/4 max-w-md p-2 rounded-lg shadow-md bg-noise sm:w-1/2 md:1/4 max-h-96 hover:shadow-lg">
+    <div className="flex flex-col w-3/4 max-w-md p-2 rounded-lg shadow-md bg-noise sm:w-1/2 md:1/4 max-h-[30rem] hover:shadow-lg">
       {imgSrc ?
         <Image 
           width="100%" 
           height="100%" 
           layout="responsive" 
           objectFit="contain"
-          className="w-full h-4/6"
+          className="w-full"
           src={imgSrc}
           alt={title} 
         />
         : null 
       }
       <div className="flex flex-col justify-around grow">
-        <div className="flex items-center content-center justify-between mt-2">
+        <div className="my-2">
           <h5 className="font-bold uppercase lg:text-2xl">
             {title}
           </h5>
-          <div className="flex">
-          {
-            youtubeLink ?
-            (<SiYoutube 
-              className="m-2 cursor-pointer hover:opacity-60"
-              style={{ fontSize: '18px', color: 'red' }}
-              onClick={()=> window.open(youtubeLink, "_blank")}
-            />) : null
+          <p>{description}</p>
+        </div>
+      <div className="flex items-center justify-between p-1 text-center border-t-2 border-slate-700">
+        <p>{date}</p>
+        <div>
+          {links.map(({ linkName, linkUrl}) => 
+            <Link href={linkUrl} key={linkUrl}>
+              <a 
+                className="ml-2 text-sm odd:text-myred even:text-blue-500 hover:opacity-60"
+                target="_blank" rel="noreferrer">
+                  {linkName}<span className="text-black">↗</span>
+              </a>
+              </Link>
+            )
           }
-          {
-            githubLink ?
-            (<SiGithub 
-              className="m-2 cursor-pointer hover:opacity-60"
-              style={{ fontSize: '18px', color: 'black' }}
-              onClick={()=> window.open(youtubeLink, "_blank")}
-            />) : null
-          }
-          {
-            imgurLink ?
-            (<SiImgur 
-              className="m-2 cursor-pointer hover:opacity-60"
-              style={{ fontSize: '18px', color: '#89C623' }}
-              onClick={()=> window.open(imgurLink, "_blank")}
-            />) : null
-          }
-          {
-            websiteLink ?
-            (<CgWebsite 
-              className="m-2 cursor-pointer hover:opacity-60"
-              style={{ fontSize: '18px', color: 'blue' }}
-              onClick={()=> window.open(websiteLink, "_blank")}
-            />) : null
-          }
-          </div>
-          </div>
-        <p className="">{description}</p>
-      <div className="mt-2 text-center border-t-2 border-slate-700">
-        <p className="mt-2">{date}</p>
+        </div>
       </div>
     </div>
   </div>
