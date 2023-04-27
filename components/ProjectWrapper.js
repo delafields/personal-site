@@ -59,7 +59,7 @@ export default function ProjectWrapper({ pageTitle, children }) {
           <a className="font-bold hover:opacity-60">home</a>
         </Link>
       </div>
-      <div className="z-20 flex flex-col items-center pt-8">
+      <div className="z-20 flex flex-col items-center pt-8 sm:flex-row sm:flex-wrap sm:justify-center sm:gap-8 sm:items-stretch">
         {children}
       </div>
     </div>
