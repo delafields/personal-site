@@ -1,7 +1,7 @@
 const projectsData = [
   {
-    title: 'Dino Rattle',
-    description: "I'm an uncle! A gift for Rory.",
+    title: 'Rawry the Dino Rattle',
+    description: "A chompy little toy for my first nephew",
     imgSrc: '/projectImages/rawry.jpeg',
     links: [
       {linkName: 'imgur', linkUrl: 'https://imgur.com/gallery/gZXafL8'}
@@ -9,8 +9,8 @@ const projectsData = [
     date: '6/7/2022'
   },
   {
-    title: 'Media Console',
-    description: 'Covid project. Walnut media console.',
+    title: 'Walnut MCM media console',
+    description: 'Shouts out to the amish for the wood',
     imgSrc: '/projectImages/media-console.jpeg',
     links: [
       {linkName: 'imgur', linkUrl: 'https://imgur.com/gallery/dhLDLeU'}
@@ -18,8 +18,8 @@ const projectsData = [
     date: '10/28/2020'
   },
   {
-    title: 'Coffee Table',
-    description: 'Covid project. Walnut coffee table.',
+    title: 'walnut mcm Coffee Table',
+    description: 'Finally I can show off my tasteful coffee table books',
     imgSrc: '/projectImages/coffee-table.jpeg',
     links: [
       {linkName: 'imgur', linkUrl: 'https://imgur.com/gallery/dhLDLeU'}
@@ -28,7 +28,7 @@ const projectsData = [
   },
   {
     title: 'Garden Box',
-    description: 'A standing (see standing desk description) garden box. I\'ll add a photo with veg depending on the color of my thumb.',
+    description: 'I finally have a yard',
     imgSrc: '/projectImages/garden-box.jpeg',
     links: [
       {linkName: 'imgur', linkUrl: 'https://imgur.com/gallery/UIN0oow'}
@@ -37,35 +37,35 @@ const projectsData = [
   },
   {
     title: 'Mod Hat Racks',
-    description: "Compact, modular hat racks (excuse the hair, my parents have huskies)",
+    description: "Every other version of these sucks. This is rad",
     imgSrc: '/projectImages/hat-racks.jpg',
     links: [],
     date: '5/28/2020'
   },
   {
     title: 'Bike Utility Strap',
-    description: 'Leather bike straps for carrying something cool like a sixer or a lance or just an umbrella (you could probably joust with these things)',
+    description: 'Really great for carrying something cool like a sixer or a lance or just an umbrella',
     imgSrc: '/projectImages/bike-strap.jpg',
     links: [],
     date: '5/20/2020'
   },
   {
     title: 'Belt Bar',
-    description: 'Corporal punishment weapon holder',
+    description: 'Dads in the 50s love it, kids in the 50s hate it',
     imgSrc: '/projectImages/belt-bar.jpg',
     links: [],
     date: '5/14/2020'
   },
   {
     title: 'Kangaroo Rattle',
-    description: "A wooden rattle for a friend's firstborn",
+    description: "For the first baby in the friend group (update - he broke it)",
     imgSrc: '/projectImages/kangaroo-rattle.jpg',
     links: [],
     date: '5/21/2020'
   },
   {
     title: 'Letterbox',
-    description: 'Wooden entryway box for letters, keys, illegal substances, whatever',
+    description: 'For letters, keys, bug magazines, whatever',
     imgSrc: '/projectImages/letter-box.jpg',
     links: [],
     date: '4/30/2020'
@@ -90,7 +90,7 @@ const projectsData = [
   },
   {
     title: 'Standing Desk',
-    description: 'FIGHT BACK AGAINST BACK PAIN',
+    description: 'I made this before standing desks were cool, fyi',
     imgSrc: '/projectImages/standing-desk.jpeg',
     links: [
       {linkName: 'imgur', linkUrl: 'https://imgur.com/a/PxWC6'}

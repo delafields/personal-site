@@ -1,7 +1,7 @@
 const projectsData = [
   {
     title: 'Personal Site Rebuild',
-    description: 'Simplified this site. Vue -> React. Next.js as the framework, tailwind.css for styling.',
+    description: 'Vue -> React + Next.js + tailwind. Very cool site, check it out',
     links: [
       {linkName: 'github', linkUrl: 'https://github.com/delafields/personal-site'}
     ],
@@ -10,7 +10,7 @@ const projectsData = [
   },
   {
     title: 'Data Science Portfolio',
-    description: 'Projects from the data science season of my life. Contains some cool analyses, statistial models and GPT-2 trained on Charles Manson interviews.',
+    description: 'Extracurricular projects from the data szn of my life. Analyses, modeling, visualizations & other shenanigans',
     links: [
       {linkName: 'github', linkUrl: 'https://github.com/delafields/delafields.github.io'}
     ],
@@ -18,7 +18,7 @@ const projectsData = [
   },
   {
     title: 'JokePT-2',
-    description: 'Trained a BERT model on yo momma jokes & charlie manson interviews',
+    description: 'Finetuned a BERT model on yo momma jokes & charlie manson interviews. Kinda sucks but I was trying to reach the singularity',
     links: [
       {linkName: 'github', linkUrl: 'https://github.com/delafields/delafields.github.io/tree/master/JokePT2'}
     ],
@@ -34,7 +34,7 @@ const projectsData = [
   },
   {
     title: 'Atom Material Colors',
-    description: 'An Atom plugin that displays and autocompletes Material Design Colors',
+    description: 'An Atom (RIP) plugin that autocompletes Material Design Colors. Had a couple 10,000 downloads',
     links: [
       {linkName: 'github', linkUrl: 'https://github.com/delafields/atom-material-colors'}
     ],
@@ -42,7 +42,7 @@ const projectsData = [
   },
   {
     title: 'Favoritify',
-    description: 'Spotify Wrapped before Spotify Wrapped',
+    description: 'Pretty much Spotify Wrapped before Spotify Wrapped',
     links: [
       {linkName: 'github', linkUrl: 'https://github.com/delafields/Favoritify'}
     ],
@@ -51,7 +51,7 @@ const projectsData = [
   },
   {
     title: 'WOD scraper',
-    description: "Too 🅱️roke to afford a crossfit membership so I made a bot that texts me my local gym's public WOD every morning",
+    description: "Too 🅱️roke to afford a crossfit membership so this bot would text me my local gym's WOD every morning",
     links: [
       {linkName: 'github', linkUrl: 'https://github.com/delafields/GymScraper'}
     ],
@@ -67,7 +67,7 @@ const projectsData = [
   },
   {
     title: 'Nokiacoin',
-    description: 'A bot that tweeted the price of BTC in terms of Nokia cell model numbers. BTC has long since yeeted itself out of range.',
+    description: 'A bot that tweeted the price of BTC in terms of Nokia cell model numbers. BTC has long since yeeted itself out of range',
     links: [
       {linkName: 'github', linkUrl: 'https://github.com/delafields/Nokiacoin'}
     ],
@@ -75,7 +75,7 @@ const projectsData = [
   },
   {
     title: 'Rap Adlibs',
-    description: 'Alexa yells rap adlibs at you until you can guess who it is. So like, alexa say "DALE", u say "Mr. Worldwide"',
+    description: 'Alexa yells rap adlibs at you until you can guess who it is. So like, alexa says "DALE", u say "Mr. Worldwide" and win',
     links: [
       {linkName: 'github', linkUrl: 'https://github.com/delafields/alexa-skills/tree/master/rap_adlibs'}
     ],
@@ -91,7 +91,7 @@ const projectsData = [
   },
   {
     title: 'Smart Mirror',
-    description: 'An mirror that displayed my stonks, the weather & my calendar',
+    description: 'A RaspberryPi powered mirror that displayed my stonks, the weather & my calendar',
     links: [
       {linkName: 'github', linkUrl: 'https://github.com/delafields/smartmirror-react'}
     ],
