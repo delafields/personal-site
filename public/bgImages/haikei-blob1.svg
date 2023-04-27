@@ -1,0 +1,15 @@
+<svg id="visual" viewBox="0 0 1800 1200" width="1800" height="1200" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+<rect x="0" y="0" width="1800" height="1200" fill="#001220"></rect>
+<defs>
+<linearGradient id="grad1_0" x1="33.3%" y1="100%" x2="100%" y2="0%">
+<stop offset="20%" stop-color="#001220" stop-opacity="1"></stop>
+<stop offset="80%" stop-color="#001220" stop-opacity="1"></stop>
+</linearGradient></defs><defs>
+<linearGradient id="grad2_0" x1="0%" y1="100%" x2="66.7%" y2="0%">
+<stop offset="20%" stop-color="#001220" stop-opacity="1"></stop>
+<stop offset="80%" stop-color="#001220" stop-opacity="1"></stop>
+</linearGradient></defs><g transform="translate(1800, 1200)">
+<path d="M-865.3 0C-833.2 -109.8 -801.1 -219.5 -750.2 -310.7C-699.2 -402 -629.4 -474.6 -560.7 -560.7C-492 -646.9 -424.4 -746.5 -331.1 -799.5C-237.9 -852.5 -118.9 -858.9 0 -865.3L0 0Z" fill="#fef8ee"></path></g><g transform="translate(0, 0)"><path d="M865.3 0C817.8 97.8 770.4 195.6 736.3 305C702.3 414.4 681.7 535.5 611.9 611.9C542 688.3 422.9 720 312.7 754.8C202.5 789.6 101.2 827.5 0 865.3L0 0Z" fill="#fef8ee">
+</path>
+</g>
+</svg>

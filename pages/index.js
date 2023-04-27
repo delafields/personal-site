@@ -9,7 +9,7 @@ export default function Home() {
   const [playKeyboard] = useSound(keyboardSfx);
 
   return (
-    <div className="box-border w-screen h-screen min-h-full overflow-hidden border-white border-20">
+    <div className="box-border overflow-hidden border-white border-20 bg-paper">
       <Head>
         <title>Jeremy Fields</title>
         <meta name="jeremy fields" content="personal site" />
@@ -17,9 +17,10 @@ export default function Home() {
       </Head>
 
       <main 
-        className="min-h-full max-w-screen-2xl text-center sm:text-left p-2 sm:rounded bg-paper-stripes grid grid-rows-[1fr_1fr_4fr] sm:grid-rows-[1fr_4fr_1fr] font-['Lexend']"
+        className="w-wscreenborder h-hscreenborder text-center sm:text-left py-2 sm:rounded grid grid-rows-[1fr_4fr_1fr] font-['Lexend'] bg-blob2 bg-cover"
         >
-        <div className="pt-2 pl-4">
+        
+        <div className="sm:pt-2 sm:pl-4">
           <p className='mb-4 font-bold'>jeremy fields</p>
           
           <Link href="/IRLprojects">
@@ -42,7 +43,8 @@ export default function Home() {
           </Link>
           */}
         </div>
-        <div className="flex flex-col items-center mt-6 sm:place-self-end sm:justify-end sm:mt-0 sm:mr-4">
+        <div></div>
+        <div className="flex flex-col items-center sm:place-self-end sm:mr-12 sm:mb-24">
           <Link href="/experience">
             <a className="font-bold text-myred hover:opacity-60">
             work experience
