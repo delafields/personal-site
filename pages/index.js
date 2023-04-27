@@ -17,21 +17,11 @@ export default function Home() {
       </Head>
 
       <main 
-        className="min-h-full max-w-screen-2xl p-2 sm:rounded bg-paper-stripes grid grid-rows-[1fr_1fr_4fr] sm:grid-rows-[1fr_4fr_1fr] font-['Lexend']"
+        className="min-h-full max-w-screen-2xl text-center sm:text-left p-2 sm:rounded bg-paper-stripes grid grid-rows-[1fr_1fr_4fr] sm:grid-rows-[1fr_4fr_1fr] font-['Lexend']"
         >
         <div className="pt-2 pl-4">
-          jeremy fields<br/>
-          currently a {' '}
-          <a 
-            className="font-bold text-myred-500 hover:opacity-60"
-            href="https://delafields.github.io/" 
-            target="_blank" 
-            rel="noreferrer"
-          >
-            data scientist
-          </a>
-          {' '}@bloomberg
-          <br/>
+          <p className='mb-4 font-bold'>jeremy fields</p>
+          
           <Link href="/IRLprojects">
             <a className="font-bold text-myred hover:opacity-60 cursor-drill" onMouseEnter={playDrill}>
             IRL projects
@@ -55,7 +45,7 @@ export default function Home() {
         <div className="flex flex-col items-center mt-6 sm:place-self-end sm:justify-end sm:mt-0 sm:mr-4">
           <Link href="/experience">
             <a className="font-bold text-myred hover:opacity-60">
-            experience
+            work experience
             </a>
           </Link>
           <a 

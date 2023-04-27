@@ -1,15 +1,21 @@
 const experienceData = [
   {
-    date: 'March 2020: ',
-    text: `Data Scientist @ Bloomberg. NLP, ML, ETL pipelines`
+    title: 'Data Scientist',
+    company: 'Bloomberg',
+    date: 'Mar 2020 - Apr 2023',
+    description: `NLP before LLMs, training and deploying ML models, data engineering & writing performant ETL pipelines`
   },
   {
-    date: 'Aug 2018: ',
-    text: `Analyst @ Merkle. A/B tests, dashboarding, customer segmentation`
+    title: 'Data Analyst',
+    company: 'Merkle Inc',
+    date: 'Aug 2018 - Mar 2020',
+    description: `Statistical analysis of marketing A/B tests, dashboarding, & customer segmentation modeling`
   },
   {
-    date: '- 2018: ',
-    text: `College (started with Architecture left with Economics), freelance front-end dev`
+    title: 'College',
+    company: 'University of Maryland, College Park',
+    date: '- Aug 2018',
+    description: `Came to study architecture & left with a degree in Economics, freelance front-end dev to pay the bills`
   }
 ]
 

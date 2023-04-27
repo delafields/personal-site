@@ -2,16 +2,16 @@ personal site
 
 ## TODOs
 Homepage
-* Remove job title
+* ~~Remove job title~~
 * (LAST) stripes should be responsive and centered
   * do I even keep these? is it too plain without them? 
   * could I replace them with something? stripes of red blue yellow?
-* Rename "experience" to something like professional experience
+* ~~Rename "experience" to something like professional experience~~
 
 Experience page
-  * Add title to "experience" page, like irl/code projects
-  * Rename "My timeline"
-  * Try moving timeline box up higher
+  * ~~Add title to "experience" page, like irl/code projects~~
+  * ~~Rename "My timeline"~~
+  * ~~Try moving timeline box up higher~~
 
 Projects
 * try making projects filterable (keep the filter options MINIMAL)
