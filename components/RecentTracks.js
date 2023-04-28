@@ -11,7 +11,7 @@ export default function RecentTracks() {
     return (
       <div className="max-w-4xl p-2 rounded-lg shadow-md bg-noise w-80 sm:w-96">
       <p className="font-black text-center">
-        what i'm listening to now
+        last 10 songs i've listened to
       </p>
       {data.tracks.map((track, index) => (
           <div 

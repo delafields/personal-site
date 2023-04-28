@@ -11,7 +11,7 @@ export default function TopTracks() {
     return (
         <div className="max-w-4xl p-2 mt-4 rounded-lg shadow-md md:mt-0 md:ml-4 bg-noise w-80 sm:w-96">
             <p className="font-black text-center">
-                what's been hitting the last 6 months
+                most listened over the last 6 months
             </p>
             {data.tracks.map((track, index) => (
                 <div 
