@@ -2,6 +2,7 @@ import { getRecentlyPlaying } from '../../lib/spotify'
 
 export default async function handler(_, res) {
     const response = await getRecentlyPlaying();
+    console.log("response", response);
 
     const { items } = await response.json();
     
