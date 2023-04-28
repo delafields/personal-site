@@ -34,14 +34,14 @@ export default function Home() {
             code projects
             </a>
           </Link>
-          {/*
+          
           {' / '}
           <Link href="/tunes">
             <a className="font-bold text-myred hover:opacity-60 cursor-music">
             tunes
             </a>
           </Link>
-          */}
+         
         </div>
         <div></div>
         <div className="flex flex-col items-center sm:place-self-end sm:mr-12 sm:mb-24">
