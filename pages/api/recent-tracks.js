@@ -2,9 +2,9 @@ import { getRecentlyPlaying } from '../../lib/spotify'
 
 export default async function handler(_, res) {
     const response = await getRecentlyPlaying();
-    console.log("response", response);
 
     const { items } = await response.json();
+    // console.log("items", items)
     
     const tracks = items.slice(0, 10).map((track) => ({
         artist: track.track.artists.map((_artist) => _artist.name).join(', '),
