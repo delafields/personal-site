@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Head from 'next/head'
 
 export default function ProjectWrapper({ pageTitle, children }) {
 
@@ -54,6 +55,10 @@ export default function ProjectWrapper({ pageTitle, children }) {
         </g>
       </svg>
       <div className="flex flex-col items-center justify-between">
+        <Head>
+          <title>Jeremy's {pageTitle}</title>
+        </Head>
+
         <h1 className="mb-4 text-2xl font-bold text-myred">{pageTitle}</h1>
         <Link href="/">
           <a className="font-bold hover:opacity-60">home</a>

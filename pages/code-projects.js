@@ -1,4 +1,3 @@
-import Link from 'next/link'
 import ProjectWrapper from "../components/ProjectWrapper"
 import ProjectCard from "../components/ProjectCard"
 import projectsData from "../assets/codeProjects.js"

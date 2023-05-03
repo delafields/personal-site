@@ -23,13 +23,13 @@ export default function Home() {
         <div className="sm:pt-2 sm:pl-4">
           <p className='mb-4 font-bold'>jeremy fields</p>
           
-          <Link href="/IRLprojects">
+          <Link href="/IRL-projects">
             <a className="font-bold text-myred hover:opacity-60 cursor-drill" onMouseEnter={playDrill}>
             IRL projects
             </a>
           </Link>
           {' / '}
-          <Link href="/codeProjects">
+          <Link href="/code-projects">
             <a className="font-bold text-myred hover:opacity-60 cursor-imac" onMouseEnter={playKeyboard}>
             code projects
             </a>
