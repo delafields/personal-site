@@ -9,7 +9,7 @@ export default function Home() {
   const [playKeyboard] = useSound(keyboardSfx);
 
   return (
-    <div className="box-border overflow-hidden border-white border-20 bg-paper">
+    <div className="box-border overflow-hidden bg-cover border-white border-20 bg-blob2">
       <Head>
         <title>Jeremy Fields</title>
         <meta name="jeremy fields" content="personal site" />
@@ -17,7 +17,7 @@ export default function Home() {
       </Head>
 
       <main 
-        className="w-wscreenborder h-hscreenborder text-center sm:text-left py-2 sm:rounded grid grid-rows-[1fr_2fr_1fr] sm:grid-rows-[1fr_4fr_1fr] font-['Lexend'] bg-blob2 bg-cover"
+        className="w-wscreenborder h-hscreenborder text-center sm:text-left py-2 sm:rounded grid grid-rows-[1fr_2fr_1fr] sm:grid-rows-[1fr_4fr_1fr] font-['Lexend']"
         >
         
         <div className="sm:pt-2 sm:pl-4">
