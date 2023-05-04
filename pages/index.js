@@ -9,7 +9,7 @@ export default function Home() {
   const [playKeyboard] = useSound(keyboardSfx);
 
   return (
-    <div className="box-border overflow-hidden bg-cover border-white border-20 bg-blob2">
+    <div className="box-border overflow-hidden bg-cover border-white border-20 bg-blob-png">
       <Head>
         <title>Jeremy Fields</title>
         <meta name="jeremy fields" content="personal site" />

@@ -13,7 +13,8 @@ module.exports = {
         'paper-stripes': "url(/bgImages/natural-paper.png), url(/bgImages/background-stripes.svg)",
         'noise': "url(/bgImages/noise.png)",
         'blob1': "url(/bgImages/haikei-blob1.svg)",
-        'blob2': "url(/bgImages/haikei-blob2.svg)"
+        'blob2': "url(/bgImages/haikei-blob2.svg)",
+        'blob-png': "url(/bgImages/blob-png.png)"
       },
       colors: {
         'myred': '#ff0000',
