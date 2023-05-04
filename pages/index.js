@@ -17,7 +17,7 @@ export default function Home() {
       </Head>
 
       <main 
-        className="w-wscreenborder h-hscreenborder text-center sm:text-left py-2 sm:rounded grid grid-rows-[1fr_4fr_1fr] font-['Lexend'] bg-blob2 bg-cover"
+        className="w-wscreenborder h-hscreenborder text-center sm:text-left py-2 sm:rounded grid grid-rows-[1fr_2fr_1fr] sm:grid-rows-[1fr_4fr_1fr] font-['Lexend'] bg-blob2 bg-cover"
         >
         
         <div className="sm:pt-2 sm:pl-4">
