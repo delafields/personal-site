@@ -6,7 +6,8 @@ const projectsData = [
     links: [
       {linkName: 'imgur', linkUrl: 'https://imgur.com/gallery/gZXafL8'}
     ],
-    date: '6/7/2022'
+    date: '6/7/2022',
+    product: {priceId: 'price_1N8pViK6OFnrBRcNPeZhJcKn', buttonName: 'BUY TEMPLATE'}
   },
   {
     title: 'Walnut MCM media console',

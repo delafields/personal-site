@@ -1,18 +1,17 @@
-import { CgWebsite } from "react-icons/cg";
-import { SiYoutube, SiImgur, SiGithub } from 'react-icons/si';
 import Image from 'next/image'
 import Link from 'next/link'
+import StripeButton from './StripeButton';
 
 export default function ProjectCard({ 
-  type, 
+  // type, 
   title, 
   description, 
   imgSrc, 
   date,
-  links
+  links,
+  product
 }) {
 
-  
   return (
     <div className="flex flex-col w-3/4 max-w-md p-2 rounded-lg shadow-md bg-noise sm:w-1/2 md:1/4 max-h-[30rem] hover:shadow-lg">
       {imgSrc ?
@@ -46,6 +45,10 @@ export default function ProjectCard({
               </a>
               </Link>
             )
+          }
+          {product 
+            ? <StripeButton priceId={product.priceId} buttonName={product.buttonName} /> 
+            : null
           }
         </div>
       </div>

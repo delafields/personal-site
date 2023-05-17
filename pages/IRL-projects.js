@@ -1,8 +1,6 @@
-import Link from 'next/link'
 import ProjectWrapper from "../components/ProjectWrapper"
 import ProjectCard from "../components/ProjectCard"
 import projectsData from "../assets/IRLprojects.js"
-import styles from '../styles/Home.module.css'
 
 export default function IRLprojects() {
   return (
@@ -16,6 +14,7 @@ export default function IRLprojects() {
             imgSrc={project.imgSrc}
             date={project.date}
             links={project.links}
+            product={project.product}
           />
           )
         }
