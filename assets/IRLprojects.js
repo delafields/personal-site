@@ -4,10 +4,11 @@ const projectsData = [
     description: "A chompy little toy for my first nephew",
     imgSrc: '/projectImages/rawry.jpeg',
     links: [
-      {linkName: 'imgur', linkUrl: 'https://imgur.com/gallery/gZXafL8'}
+      { linkName: 'imgur', linkUrl: 'https://imgur.com/gallery/gZXafL8' },
+      // { linkName: 'FREE PLANS', linkUrl: '/products/SSW HAT RACK PLANS.pdf' }
     ],
     date: '6/7/2022',
-    product: {priceId: 'price_1N8pViK6OFnrBRcNPeZhJcKn', buttonName: 'BUY TEMPLATE'}
+    // product: {priceId: 'price_1N8pViK6OFnrBRcNPeZhJcKn', buttonName: 'BUY TEMPLATE', file: 'SSW HAT RACK TEMPLATE.pdf'}
   },
   {
     title: 'Walnut MCM media console',

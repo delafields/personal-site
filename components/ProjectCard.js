@@ -11,7 +11,7 @@ export default function ProjectCard({
   links,
   product
 }) {
-
+  console.log(links)
   return (
     <div className="flex flex-col w-3/4 max-w-md p-2 rounded-lg shadow-md bg-noise sm:w-1/2 md:1/4 max-h-[30rem] hover:shadow-lg">
       {imgSrc ?
@@ -46,12 +46,18 @@ export default function ProjectCard({
               </Link>
             )
           }
-          {product 
-            ? <StripeButton priceId={product.priceId} buttonName={product.buttonName} /> 
+          {/* {product 
+            // ? <StripeButton priceId={product.priceId} buttonName={product.buttonName} /> 
+            ? <StripeButton product={product} />
             : null
-          }
+          } */}
         </div>
       </div>
+      {product 
+            // ? <StripeButton priceId={product.priceId} buttonName={product.buttonName} /> 
+            ? <StripeButton product={product} />
+            : null
+          }
     </div>
   </div>
   )
