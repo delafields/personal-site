@@ -1,5 +1,19 @@
 const projectsData = [
   {
+    title: 'Sunglass Blobs',
+    description: "2 blobs 1 bar",
+    imgSrc: '/projectImages/sunglass-blobs.jpeg',
+    links: [],
+    date: '7/3/2023',
+  },
+  {
+    title: 'Glasses Stand',
+    description: "Little monuments to put your specs on",
+    imgSrc: '/projectImages/glasses-stand.jpeg',
+    links: [],
+    date: '6/7/2023',
+  },
+  {
     title: 'Rawry the Dino Rattle',
     description: "A chompy little toy for my first nephew",
     imgSrc: '/projectImages/rawry.jpeg',
