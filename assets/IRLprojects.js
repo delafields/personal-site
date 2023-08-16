@@ -1,22 +1,22 @@
-const projectsData = [
+const IRLprojectsData = [
   {
     title: 'Sunglass Blobs',
-    description: "2 blobs 1 bar",
-    imgSrc: '/projectImages/sunglass-blobs.jpeg',
+    caption: "2 blobs 1 bar",
+    coverImgSrc: '/projectImages/sunglass-blobs.jpeg',
     links: [],
     date: '7/3/2023',
   },
   {
-    title: 'Glasses Stand',
-    description: "Little monuments to put your specs on",
-    imgSrc: '/projectImages/glasses-stand.jpeg',
+    title: 'Glasses Things',
+    caption: "Little monuments to put your specs on",
+    coverImgSrc: '/projectImages/glasses-stand.jpeg',
     links: [],
     date: '6/7/2023',
   },
   {
     title: 'Rawry the Dino Rattle',
-    description: "A chompy little toy for my first nephew",
-    imgSrc: '/projectImages/rawry.jpeg',
+    caption: "Toy for my first nephew",
+    coverImgSrc: '/projectImages/rawry.jpeg',
     links: [
       { linkName: 'imgur', linkUrl: 'https://imgur.com/gallery/gZXafL8' },
       // { linkName: 'FREE PLANS', linkUrl: '/products/SSW HAT RACK PLANS.pdf' }
@@ -26,8 +26,8 @@ const projectsData = [
   },
   {
     title: 'Walnut MCM media console',
-    description: 'Shouts out to the amish for the wood',
-    imgSrc: '/projectImages/media-console.jpeg',
+    caption: 'Shouts out to the amish for the wood',
+    coverImgSrc: '/projectImages/media-console.jpeg',
     links: [
       {linkName: 'imgur', linkUrl: 'https://imgur.com/gallery/dhLDLeU'}
     ],
@@ -35,8 +35,8 @@ const projectsData = [
   },
   {
     title: 'walnut mcm Coffee Table',
-    description: 'Finally I can show off my tasteful coffee table books',
-    imgSrc: '/projectImages/coffee-table.jpeg',
+    caption: 'Look at my tasteful collection of coffee table books',
+    coverImgSrc: '/projectImages/coffee-table.jpeg',
     links: [
       {linkName: 'imgur', linkUrl: 'https://imgur.com/gallery/dhLDLeU'}
     ],
@@ -44,8 +44,8 @@ const projectsData = [
   },
   {
     title: 'Garden Box',
-    description: 'I finally have a yard',
-    imgSrc: '/projectImages/garden-box.jpeg',
+    caption: 'I finally have a yard',
+    coverImgSrc: '/projectImages/garden-box.jpeg',
     links: [
       {linkName: 'imgur', linkUrl: 'https://imgur.com/gallery/UIN0oow'}
     ],
@@ -53,43 +53,43 @@ const projectsData = [
   },
   {
     title: 'Mod Hat Racks',
-    description: "Every other version of these sucks. This is rad",
-    imgSrc: '/projectImages/hat-racks.jpg',
+    caption: "Every other version of these sucks, this doesn't",
+    coverImgSrc: '/projectImages/hat-racks.jpg',
     links: [],
     date: '5/28/2020'
   },
   {
     title: 'Bike Utility Strap',
-    description: 'Really great for carrying something cool like a sixer or a lance or just an umbrella',
-    imgSrc: '/projectImages/bike-strap.jpg',
+    caption: 'Great for carrying a six pack or jousting',
+    coverImgSrc: '/projectImages/bike-strap.jpg',
     links: [],
     date: '5/20/2020'
   },
   {
     title: 'Belt Bar',
-    description: 'Dads in the 50s love it, kids in the 50s hate it',
-    imgSrc: '/projectImages/belt-bar.jpg',
+    caption: 'Dads in the 50s love it, kids in the 50s hate it',
+    coverImgSrc: '/projectImages/belt-bar.jpg',
     links: [],
     date: '5/14/2020'
   },
   {
     title: 'Kangaroo Rattle',
-    description: "For the first baby in the friend group (update - he broke it)",
-    imgSrc: '/projectImages/kangaroo-rattle.jpg',
+    caption: "For the first baby in the friend group",
+    coverImgSrc: '/projectImages/kangaroo-rattle.jpg',
     links: [],
     date: '5/21/2020'
   },
   {
     title: 'Letterbox',
-    description: 'For letters, keys, bug magazines, whatever',
-    imgSrc: '/projectImages/letter-box.jpg',
+    caption: 'For letters, keys, bug magazines, whatever',
+    coverImgSrc: '/projectImages/letter-box.jpg',
     links: [],
     date: '4/30/2020'
   },
   {
     title: 'Harvest Basket',
-    description: 'Happy 60th birthday momma',
-    imgSrc: '/projectImages/harvest-basket.jpeg',
+    caption: 'Happy 60th birthday momma',
+    coverImgSrc: '/projectImages/harvest-basket.jpeg',
     links: [
       {linkName: 'imgur', linkUrl: 'https://imgur.com/gallery/5DWJb67'}
     ],
@@ -97,8 +97,8 @@ const projectsData = [
   },
   {
     title: 'Potting Table',
-    description: "Mother's day gift, 2017",
-    imgSrc: '/projectImages/potting-table.jpeg' ,
+    caption: "Mother's day gift, 2017",
+    coverImgSrc: '/projectImages/potting-table.jpeg' ,
     links: [
       {linkName: 'imgur', linkUrl: 'https://imgur.com/a/dHMST'}
     ],
@@ -106,8 +106,8 @@ const projectsData = [
   },
   {
     title: 'Standing Desk',
-    description: 'I made this before standing desks were cool, fyi',
-    imgSrc: '/projectImages/standing-desk.jpeg',
+    caption: 'I made this before standing desks were cool, fyi',
+    coverImgSrc: '/projectImages/standing-desk.jpeg',
     links: [
       {linkName: 'imgur', linkUrl: 'https://imgur.com/a/PxWC6'}
     ],
@@ -116,5 +116,5 @@ const projectsData = [
 
 ]
 
-export default projectsData;
+export default IRLprojectsData;
 

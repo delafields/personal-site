@@ -18,7 +18,8 @@ module.exports = {
       },
       colors: {
         'myred': '#ff0000',
-        'mycream': "#fef8ee"
+        'mycream': "#fef8ee",
+        'mycreambutdarkerlol': "#F2E0C0"
       },
       fontFamily: {
         serif: ['Lexend', ...defaultTheme.fontFamily.serif]

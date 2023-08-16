@@ -1,19 +1,15 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import { BsYoutube, BsInstagram, BsGithub} from "react-icons/bs";
-import useSound from 'use-sound';
-import drillSfx from '../public/sounds/drill.mp3';
-import keyboardSfx from '../public/sounds/keyboard.mp3';
+import { BsYoutube, BsInstagram, BsTwitter, BsTiktok, BsMailbox2 } from "react-icons/bs";
+
 
 export default function Home() {
-  const [playDrill] = useSound(drillSfx);
-  const [playKeyboard] = useSound(keyboardSfx);
 
   return (
     <div className="box-border overflow-hidden bg-cover border-white border-20 bg-blob-png">
       <Head>
-        <title>Jeremy Fields</title>
-        <meta name="jeremy fields" content="personal site" />
+        <title>Super Secret Workshop</title>
+        <meta name="Super Secret Workshop" content="personal site" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -22,72 +18,68 @@ export default function Home() {
         >
         
         <div className="sm:pt-2 sm:pl-4">
-          <p className='mb-4 font-bold'>jeremy fields</p>
+          <p className='mb-4 font-bold'>super secret workshop</p>
           
-          <Link href="/IRL-projects">
-            <a className="font-bold text-myred hover:opacity-60 cursor-drill" onMouseEnter={playDrill}>
-            IRL projects
+          <Link href="/projects">
+             <a className="font-bold text-myred hover:opacity-60"> { /* cursor-drill /*onMouseEnter={playDrill}> */}
+            projects
             </a>
           </Link>
-          {' / '}
+          {/* {' / '}
           <Link href="/code-projects">
-            <a className="font-bold text-myred hover:opacity-60 cursor-imac" onMouseEnter={playKeyboard}>
+            <a className="font-bold text-myred hover:opacity-60" >  cursor-imac onMouseEnter={playKeyboard}> 
             code projects
             </a>
           </Link>
-          
+          */}
           {' / '}
           <Link href="/tunes">
-            <a className="font-bold text-myred hover:opacity-60 cursor-music">
+            <a className="font-bold text-myred hover:opacity-60"> {/* cursor-music */}
             tunes
             </a>
           </Link>
          
         </div>
         <div></div>
-        <div className="flex flex-col items-center sm:place-self-end sm:mr-12 sm:mb-24">
-          <div className='flex justify-between w-32 my-3'>
+        {/* <div className="flex flex-col items-center sm:place-self-end sm:mr-20 sm:mb-24"> */}
+        <div className="flex flex-col items-center">
+          <div className='flex justify-between w-64 my-3 '>
             <a 
-              className="text-2xl font-bold text-myred hover:opacity-60"  
-              href="https://www.youtube.com/@supersecretworkshop"
-              target="_blank" rel="noreferrer"
-            >
-              <BsYoutube/>
-            </a>
-            <a 
-              className="text-2xl font-bold text-myred hover:opacity-60"  
+              className="text-3xl font-bold text-myred hover:opacity-60"  
               href="https://www.instagram.com/supersecretworkshop/"
               target="_blank" rel="noreferrer"
             >
               <BsInstagram/>
             </a>
             <a 
-                className="text-2xl font-bold text-myred hover:opacity-60"  
-                href="https://github.com/delafields"
-                target="_blank" rel="noreferrer"
-              >
-                <BsGithub/>
+            className="text-3xl font-bold text-myred hover:opacity-60"
+            href="https://www.tiktok.com/@supersecretworkshop"
+            target="_blank" rel="noreferrer"  
+            >
+              <BsTiktok />
+            </a>
+            <a 
+            className="text-3xl font-bold text-myred hover:opacity-60"
+            href="https://twitter.com/SUPERSECRETwork"
+            target="_blank" rel="noreferrer"  
+            >
+              <BsTwitter />
+            </a>
+            <a 
+              className="text-3xl font-bold text-myred hover:opacity-60"  
+              href="https://www.youtube.com/@supersecretworkshop"
+              target="_blank" rel="noreferrer"
+            >
+              <BsYoutube/>
+            </a>
+            <a 
+              className="text-3xl font-bold text-myred hover:opacity-60"  
+              href="mailto:supersecretworkshop@gmail.com"
+              target="_blank" rel="noreferrer"
+            >
+              <BsMailbox2/>
             </a>
           </div>
-          <Link href="/experience">
-            <a className="font-bold text-myred hover:opacity-60">
-            work experience
-            </a>
-          </Link>
-          {/* <a 
-            className="my-1 font-bold text-myred hover:opacity-60"
-            href="https://twitter.com/DeLaFields"
-            target="_blank" rel="noreferrer"  
-          >
-            twitter
-          </a> */}
-          {/* <a 
-            className="font-bold text-myred hover:opacity-60"  
-            href="https://github.com/delafields"
-            target="_blank" rel="noreferrer"
-          >
-            github
-          </a> */}
         </div>
       </main>
     </div>
