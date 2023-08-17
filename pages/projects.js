@@ -39,7 +39,7 @@ export default function Projects() {
           Code projects
         </h1>
       </div>
-      <div className="z-20 flex flex-col items-center gap-8 pt-8 sm:flex-row sm:flex-wrap sm:justify-center sm:items-stretch">
+      <div className="z-20 flex flex-col items-center gap-8 py-8 sm:flex-row sm:flex-wrap sm:justify-center sm:items-stretch">
         {codeProjectsData.map((project) =>
           <ProjectCard
             key={project.title}

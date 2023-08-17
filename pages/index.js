@@ -1,7 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import { BsYoutube, BsInstagram, BsTwitter, BsTiktok, BsMailbox2 } from "react-icons/bs";
-
+import SocialLinks from '../components/SocialLinks';
 
 export default function Home() {
 
@@ -25,13 +24,6 @@ export default function Home() {
             projects
             </a>
           </Link>
-          {/* {' / '}
-          <Link href="/code-projects">
-            <a className="font-bold text-myred hover:opacity-60" >  cursor-imac onMouseEnter={playKeyboard}> 
-            code projects
-            </a>
-          </Link>
-          */}
           {' / '}
           <Link href="/tunes">
             <a className="font-bold text-myred hover:opacity-60"> {/* cursor-music */}
@@ -41,45 +33,8 @@ export default function Home() {
          
         </div>
         <div></div>
-        {/* <div className="flex flex-col items-center sm:place-self-end sm:mr-20 sm:mb-24"> */}
         <div className="flex flex-col items-center">
-          <div className='flex justify-between w-64 my-3 '>
-            <a 
-              className="text-3xl font-bold text-myred hover:opacity-60"  
-              href="https://www.instagram.com/supersecretworkshop/"
-              target="_blank" rel="noreferrer"
-            >
-              <BsInstagram/>
-            </a>
-            <a 
-            className="text-3xl font-bold text-myred hover:opacity-60"
-            href="https://www.tiktok.com/@supersecretworkshop"
-            target="_blank" rel="noreferrer"  
-            >
-              <BsTiktok />
-            </a>
-            <a 
-            className="text-3xl font-bold text-myred hover:opacity-60"
-            href="https://twitter.com/SUPERSECRETwork"
-            target="_blank" rel="noreferrer"  
-            >
-              <BsTwitter />
-            </a>
-            <a 
-              className="text-3xl font-bold text-myred hover:opacity-60"  
-              href="https://www.youtube.com/@supersecretworkshop"
-              target="_blank" rel="noreferrer"
-            >
-              <BsYoutube/>
-            </a>
-            <a 
-              className="text-3xl font-bold text-myred hover:opacity-60"  
-              href="mailto:supersecretworkshop@gmail.com"
-              target="_blank" rel="noreferrer"
-            >
-              <BsMailbox2/>
-            </a>
-          </div>
+          <SocialLinks/>
         </div>
       </main>
     </div>

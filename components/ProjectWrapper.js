@@ -20,7 +20,7 @@ export default function ProjectWrapper({ pageTitle, children }) {
   const shuffledPalettes = stripePalettes.sort((a, b) => 0.5 - Math.random());
 
   return (
-    <div className="min-h-screen py-10 bg-mycreambutdarkerlol bg-paper flex flex-col font-['Lexend'] z-0">
+    <div className="min-h-screen  bg-mycreambutdarkerlol bg-paper flex flex-col font-['Lexend'] z-0">
       <svg 
         viewBox="0 0 768 600"
         version="1.1" 
@@ -56,16 +56,13 @@ export default function ProjectWrapper({ pageTitle, children }) {
         </g>
       </svg>
 
-      <div><Nav/></div>
-      <div className="flex flex-col items-center justify-between">
+      <Nav/>
+
+      <div className="flex flex-col items-center justify-between pt-10">
         <Head>
           <title>Super Secret {pageTitle}</title>
         </Head>
 
-        {/* <h1 className="mb-4 text-2xl font-bold text-myred">{pageTitle}</h1>
-        <Link href="/">
-          <a className="font-bold hover:opacity-60">home</a>
-        </Link> */}
       </div>
       {/* <div className="z-20 flex flex-col items-center gap-8 pt-8 sm:flex-row sm:flex-wrap sm:justify-center sm:items-stretch"> */}
         {children}
