@@ -19,7 +19,7 @@ export default function ProjectWrapper({ pageTitle, children }) {
   const shuffledPalettes = stripePalettes.sort((a, b) => 0.5 - Math.random());
 
   return (
-    <div className="min-h-screen  bg-mycreambutdarkerlol bg-paper flex flex-col font-['Lexend'] z-0">
+    <div className="min-h-screen h-full bg-mycreambutdarkerlol bg-paper flex flex-col font-['Lexend'] z-0">
       <svg 
         viewBox="0 0 768 600"
         version="1.1" 
