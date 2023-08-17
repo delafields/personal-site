@@ -14,40 +14,31 @@ export default function Projects() {
     
     <ProjectWrapper pageTitle="Projects">
 
-      <div className="z-20 self-center w-max">
+      <div className="z-20 w-max">
         <h1 className="text-2xl font-bold text-myred cursor-drill" onMouseEnter={playDrill}>
           IRL projects
         </h1>
       </div>
       <div className="z-20 flex flex-col items-center gap-8 pt-8 sm:flex-row sm:flex-wrap sm:justify-center sm:items-stretch">
-        {IRLprojectsData.map((project) =>
+        {IRLprojectsData.map((irlProject, irlIndex) =>
           <ProjectCard
-            key={project.title}
-            title={project.title}
-            caption={project.caption}
-            coverImgSrc={project.coverImgSrc}
-            date={project.date}
-            links={project.links}
-            product={project.product}
+            key={irlIndex}
+            {...irlProject}
           />
           )
         }
       </div>
 
-      <div className="z-20 self-center w-max">
+      <div className="z-20 w-max">
         <h1 className="mt-10 text-2xl font-bold text-center text-myred cursor-imac" onMouseEnter={playKeyboard}>
           Code projects
         </h1>
       </div>
       <div className="z-20 flex flex-col items-center gap-8 py-8 sm:flex-row sm:flex-wrap sm:justify-center sm:items-stretch">
-        {codeProjectsData.map((project) =>
+        {codeProjectsData.map((codeProject, codeIndex) =>
           <ProjectCard
-            key={project.title}
-            title={project.title}
-            caption={project.caption}
-            date={project.date}
-            links={project.links}
-            product={project.product}
+            key={codeIndex}
+            {...codeProject}
           />
           )
         }

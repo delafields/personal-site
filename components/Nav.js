@@ -5,6 +5,7 @@ import SocialLinks from './SocialLinks';
 
 const solutions = [
   {name: 'home', href: '/'},
+  {name: 'projects', href: '/projects'},
   {name: 'store', href: '/store'},
   {name: 'tunes', href: '/tunes' }
 ];

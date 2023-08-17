@@ -1,4 +1,3 @@
-import Link from 'next/link'
 import Head from 'next/head'
 import { Nav } from './Nav';
 
@@ -63,10 +62,9 @@ export default function ProjectWrapper({ pageTitle, children }) {
           <title>Super Secret {pageTitle}</title>
         </Head>
 
-      </div>
-      {/* <div className="z-20 flex flex-col items-center gap-8 pt-8 sm:flex-row sm:flex-wrap sm:justify-center sm:items-stretch"> */}
         {children}
-      {/* </div> */}
+
+      </div>
     </div>
   )
 }

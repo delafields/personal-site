@@ -3,6 +3,7 @@ const IRLprojectsData = [
     title: 'Sunglass Blobs',
     caption: "2 blobs 1 bar",
     coverImgSrc: '/projectImages/sunglass-blobs.jpeg',
+    pageLink: 'sunglass-blobs',
     links: [],
     date: '7/3/2023',
   },
