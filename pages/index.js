@@ -20,13 +20,13 @@ export default function Home() {
           <p className='mb-4 font-bold'>super secret workshop</p>
           
           <Link href="/projects">
-             <a className="font-bold text-myred hover:opacity-60"> { /* cursor-drill /*onMouseEnter={playDrill}> */}
+             <a className="font-bold text-myred hover:opacity-60">
             projects
             </a>
           </Link>
           {' / '}
           <Link href="/tunes">
-            <a className="font-bold text-myred hover:opacity-60"> {/* cursor-music */}
+            <a className="font-bold text-myred hover:opacity-60">
             tunes
             </a>
           </Link>

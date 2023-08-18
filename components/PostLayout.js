@@ -27,10 +27,10 @@ export default function PostLayout({ children }) {
     }
 
     return (
-        <ProjectWrapper pageTitle="test">
-            <div className="z-20 flex flex-col items-center w-full px-6 md:items-stretch md:justify-center grow md:flex-row">
+        <ProjectWrapper pageTitle={project.title}>
+            <div className="z-20 flex flex-col items-center w-full px-6 mb-8 md:items-stretch md:justify-center grow md:flex-row">
                 
-                <div className="flex flex-col items-center self-center w-1/3 gap-y-2 bg-white/90 h-fit">
+                <div className="flex flex-col items-center w-full py-4 md:mt-12 md:w-1/3 rounded-2xl bg-noise md:gap-y-2 bg-white/90 h-fit">
                     <div className="relative w-4/5 h-96">
                         <Image
                         src={images.currentImage}
@@ -38,7 +38,7 @@ export default function PostLayout({ children }) {
                         objectFit="contain"
                         />
                     </div>
-                    <div className="flex gap-x-2">
+                    <div className="flex px-2 gap-x-2">
                         {images.otherImages.map((image, index) =>
                             <div 
                                 className="cursor-pointer"
@@ -55,16 +55,21 @@ export default function PostLayout({ children }) {
                     </div>
                 </div>
                 
-                <div className="flex flex-col w-2/3 px-6 bg-white/90">
+                <div className="flex flex-col px-6 mx-2 mt-8 md:w-2/3 bg-white/90 md:mt-0">
                     <h1 className="my-6 text-2xl font-bold text-center text-myred">
                         {project.title}
                     </h1>
 
                     <div className="flex flex-col justify-between h-full mx-6">
-                        {children}
-                        <div className="flex justify-center">
+
+                        <div className="[&>a]:text-myred [&>a]:hover:opacity-60 [&>p]:my-4">
+                            {children}
+                        </div>
+
+                        <div className="flex justify-center mt-8 mb-2 md:mt-0">
                             <SocialLinks />
                         </div>
+
                     </div>
 
                 </div>
@@ -73,10 +78,6 @@ export default function PostLayout({ children }) {
                 
                 
             </div>
-
-            {/* <div className='fixed bottom-0'>
-                    <SocialLinks />
-                </div> */}
 
         </ProjectWrapper>
     )

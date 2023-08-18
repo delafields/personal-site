@@ -49,11 +49,7 @@ export default function ProjectCard({ ...project }) {
     {
       project.pageLink ? (
         <Link 
-          // href={`/projects/${encodeURIComponent(project.pageLink)}`} 
-          href={{
-            pathname: `/projects/${encodeURIComponent(project.pageLink)}`,
-            query: {title: project.title}
-          }} 
+          href={`/projects/${encodeURIComponent(project.pageLink)}`} 
           className='cursor-pointer'
         >
           <a className="flex flex-col w-3/4 max-w-md p-2 rounded-lg shadow-md bg-noise sm:w-1/2 md:1/4 max-h-[30rem] hover:shadow-lg">
