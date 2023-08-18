@@ -57,7 +57,7 @@ export default function ProjectWrapper({ pageTitle, children }) {
 
       <Nav/>
 
-      <div className="flex flex-col items-center justify-between pt-10">
+      <div className="flex flex-col items-center justify-between pt-10 grow">
         <Head>
           <title>Super Secret {pageTitle}</title>
         </Head>
