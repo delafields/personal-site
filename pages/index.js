@@ -33,7 +33,7 @@ export default function Home() {
          
         </div>
         <div></div>
-        <div className="flex flex-col items-center">
+        <div className="flex flex-col items-center lg:items-end lg:mr-8">
           <SocialLinks/>
         </div>
       </main>
