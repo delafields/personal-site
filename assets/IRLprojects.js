@@ -53,7 +53,9 @@ const IRLprojectsData = [
     title: 'Mod Hat Racks',
     caption: "Every other version of these sucks, this doesn't",
     coverImgSrc: '/projectImages/hat-racks.jpg',
-    links: []
+    links: [
+      {linkName: 'get a template in the shop', linkUrl: '/shop'}
+    ]
   },
   {
     title: 'Bike Utility Strap',

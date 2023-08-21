@@ -25,6 +25,12 @@ export default function Home() {
             </a>
           </Link>
           {' / '}
+          <Link href="/shop">
+            <a className="font-bold text-myred hover:opacity-60">
+            shop
+            </a>
+          </Link>
+          {' / '}
           <Link href="/tunes">
             <a className="font-bold text-myred hover:opacity-60">
             tunes
