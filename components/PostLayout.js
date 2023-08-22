@@ -11,7 +11,7 @@ import Image from "next/image";
 export default function PostLayout({ children, type }) {
     const router = useRouter();
     const pageLink = router.pathname.split("/").pop();
-
+    
     let itemData = type === 'projects' ? IRLprojectsData : shopItems;
     let item = itemData.filter(item => item.pageLink == pageLink)[0];
     let [images, setImages] = useState({
@@ -20,14 +20,10 @@ export default function PostLayout({ children, type }) {
     })
 
     const imageChanger = (selectedImage) => {
-
         // remove selectedImage from otherImages, add the currentImage
         let newOtherImages = images.otherImages.filter(src => src != selectedImage).concat(images.currentImage);
         
-        setImages({
-            currentImage: selectedImage,
-            otherImages: newOtherImages
-        })
+        setImages({ currentImage: selectedImage, otherImages: newOtherImages })
 
     }
 
@@ -49,6 +45,7 @@ export default function PostLayout({ children, type }) {
 
     return (
         <ProjectWrapper pageTitle={item.title}>
+            
             <div className="flex flex-col items-center w-full h-[75vh] px-6 mb-8 md:items-stretch md:justify-center grow md:flex-row">
                 
                 <div className="flex flex-col items-center w-full py-4 md:mt-12 md:w-1/3 rounded-2xl bg-noise md:gap-y-2 bg-white/90 h-fit">
@@ -77,9 +74,13 @@ export default function PostLayout({ children, type }) {
                     <div className="flex flex-col justify-between h-full mx-6">
 
                         <div className="[&>a]:text-myred [&>a]:hover:opacity-60 [&>p]:my-4">
+
                             {type === 'shop' ? <div className="mt-4 mb-10 text-2xl font-bold">{item.product.price}</div> : null}
+                            
                             {children}
+
                             {type === 'shop' && item.product.size ? <div className="mt-12 italic">Size: {item.product.size}</div> : null}
+                        
                         </div>
 
                         {type === 'shop' ? <BuyButton {...item.product}/> : null}
@@ -91,9 +92,6 @@ export default function PostLayout({ children, type }) {
                     </div>
 
                 </div>
-                
-                
-                
                 
             </div>
 

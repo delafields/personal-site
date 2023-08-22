@@ -3,6 +3,7 @@ import Link from 'next/link'
 import SocialLinks from '../components/SocialLinks';
 
 export default function Home() {
+  const pages = ["projects", "shop", "tunes"]
 
   return (
     <div className="box-border overflow-hidden bg-cover border-white border-20 bg-blob-png">
@@ -17,31 +18,28 @@ export default function Home() {
         >
         
         <div className="sm:pt-2 sm:pl-4">
-          <p className='mb-4 font-bold'>super secret workshop</p>
           
-          <Link href="/projects">
-             <a className="font-bold text-myred hover:opacity-60">
-            projects
-            </a>
-          </Link>
-          {' / '}
-          <Link href="/shop">
-            <a className="font-bold text-myred hover:opacity-60">
-            shop
-            </a>
-          </Link>
-          {' / '}
-          <Link href="/tunes">
-            <a className="font-bold text-myred hover:opacity-60">
-            tunes
-            </a>
-          </Link>
+          <p className='mb-4 font-bold'>super secret workshop</p>
+
+          {pages.map((page, index) =>
+            <>
+              <Link key={index} href={`/${page}`}>
+                <a className="font-bold text-myred hover:opacity-60">
+                  {page}
+                </a>
+              </Link>
+              {index < pages.length-1 ? ' / ' : null}
+            </>
+            )}
          
         </div>
+
         <div></div>
+
         <div className="flex flex-col items-center lg:items-end lg:mr-8">
           <SocialLinks/>
         </div>
+        
       </main>
     </div>
   )

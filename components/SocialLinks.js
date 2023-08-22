@@ -1,43 +1,27 @@
 import { BsYoutube, BsInstagram, BsTwitter, BsTiktok, BsMailbox2 } from "react-icons/bs";
 
 export default function SocialLinks() {
+
+  const links = [
+    { "linkTo": "instagram", "url": "https://www.instagram.com/supersecretworkshop/", "icon": BsInstagram },
+    { "linkTo": "tiktok", "url": "https://www.tiktok.com/@supersecretworkshop", "icon": BsTiktok },
+    { "linkTo": "twitter", "url": "https://twitter.com/SUPERSECRETwork", "icon": BsTwitter },
+    { "linkTo": "youtube", "url": "https://www.youtube.com/@supersecretworkshop", "icon": BsYoutube },
+    { "linkTo": "email", "url": "mailto:supersecretworkshop@gmail.com", "icon": BsMailbox2 },
+  ]
+
     return (
         <div className='flex justify-between w-64 my-3'>
+          {links.map((link) =>
             <a 
+              key={link.linkTo}
               className="text-3xl font-bold text-myred hover:opacity-60"  
-              href="https://www.instagram.com/supersecretworkshop/"
-              target="_blank" rel="noreferrer"
-            >
-              <BsInstagram/>
+              href={link.url}
+              target="_blank" 
+              rel="noreferrer">
+                <link.icon/>
             </a>
-            <a 
-            className="text-3xl font-bold text-myred hover:opacity-60"
-            href="https://www.tiktok.com/@supersecretworkshop"
-            target="_blank" rel="noreferrer"  
-            >
-              <BsTiktok />
-            </a>
-            <a 
-            className="text-3xl font-bold text-myred hover:opacity-60"
-            href="https://twitter.com/SUPERSECRETwork"
-            target="_blank" rel="noreferrer"  
-            >
-              <BsTwitter />
-            </a>
-            <a 
-              className="text-3xl font-bold text-myred hover:opacity-60"  
-              href="https://www.youtube.com/@supersecretworkshop"
-              target="_blank" rel="noreferrer"
-            >
-              <BsYoutube/>
-            </a>
-            <a 
-              className="text-3xl font-bold text-myred hover:opacity-60"  
-              href="mailto:supersecretworkshop@gmail.com"
-              target="_blank" rel="noreferrer"
-            >
-              <BsMailbox2/>
-            </a>
+          )}
           </div>
     )
 }

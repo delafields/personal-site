@@ -58,6 +58,7 @@ export default function ProjectWrapper({ pageTitle, children }) {
       <Nav/>
 
       <div className="z-20 py-10">
+        
         <Head>
           <title>Super Secret {pageTitle}</title>
         </Head>

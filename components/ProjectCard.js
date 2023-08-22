@@ -36,12 +36,11 @@ export default function ProjectCard({ type, ...project }) {
                     {linkName}
                 </a>
                 </Link>
-              )
-            }
+              )}
             
           </div>
 
-        {project.product ? <BuyButton {...project.product} /> : null}
+        {project.product && project.product.price ?  <p className='text-center'>{project.product.price}</p> : null}
 
       </div>
     </>
@@ -55,12 +54,12 @@ export default function ProjectCard({ type, ...project }) {
           href={`/${type}/${encodeURIComponent(project.pageLink)}`}
           className='cursor-pointer'
         >
-          <a className="flex flex-col w-3/4 max-w-md p-2 rounded-lg shadow-md bg-noise sm:w-1/2 md:1/4 max-h-[30rem] hover:shadow-lg">
+          <a className="flex flex-col w-3/4 max-w-md p-2 rounded-lg shadow-md bg-noise sm:w-1/2 max-h-[30rem] hover:shadow-lg">
             <ProjectCardDetails />
           </a>
         </Link>
       ) : (
-        <div className="flex flex-col w-3/4 max-w-md p-2 rounded-lg shadow-md bg-noise sm:w-1/2 md:1/4 max-h-[30rem] hover:shadow-lg">
+        <div className="flex flex-col w-3/4 max-w-md p-2 rounded-lg shadow-md bg-noise sm:w-1/2 max-h-[30rem] hover:shadow-lg">
           <ProjectCardDetails />
         </div>
       )

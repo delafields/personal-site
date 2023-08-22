@@ -43,17 +43,21 @@ export const Nav = () => {
 
   return (
     <Popover className={ (open ? 'bg-white sticky top-0 z-50 visible transition-2 ease-in-out delay-150 duration-300' : 'invisible')}>
+      
       <div className='px-6'>
+
         <div className='flex justify-between py-6'>
+
           <Link href='/'>super secret workshop</Link>
+
           <Popover.Group as='nav' className='space-x-10'>
+
             <Popover className='relative'>
+
               {({ open }) => (
                 <>
-                  <Popover.Button
-                    className={open ? 'text-myred focus:outline-none mt-1' : 
-                      'text-black focus:outline-none mt-1'}
-                  >
+
+                  <Popover.Button className={open ? 'text-myred focus:outline-none mt-1' : 'text-black focus:outline-none mt-1'}>
                     <GiHamburgerMenu />
                   </Popover.Button>
 
@@ -66,9 +70,13 @@ export const Nav = () => {
                     leaveFrom='opacity-100 translate-y-0'
                     leaveTo='opacity-0 translate-y-1'
                   >
+
                     <Popover.Panel className='absolute z-10 px-2 mt-4 -right-8 w-80'>
+
                       <div className='overflow-hidden rounded-lg shadow-lg'>
+
                         <div className='relative flex flex-wrap justify-center gap-6 p-4 bg-white'>
+                          
                           {solutions.map((item) => (
                             <a
                               key={item.name}
@@ -80,17 +88,28 @@ export const Nav = () => {
                               </p>
                             </a>
                           ))}
+
                           <SocialLinks/>
+
                         </div>
+
                       </div>
+
                     </Popover.Panel>
+
                   </Transition>
+
                 </>
               )}
+
             </Popover>
+
           </Popover.Group>
+
         </div>
+
       </div>
+
     </Popover>
   );
 };
