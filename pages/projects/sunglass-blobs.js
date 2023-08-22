@@ -4,13 +4,27 @@ export default function Post({}) {
     return (
         <PostLayout>
             <p>
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Velit egestas dui id ornare arcu odio ut. Pharetra magna ac placerat vestibulum lectus mauris ultrices. Turpis massa sed elementum tempus egestas sed sed risus pretium
+            Walnut's gentle grace,<br/>
+            Brass bridge between twin blobs stands,<br/>
+            Sunglasses cradled.
             </p>
             <p>
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Velit egestas dui id ornare arcu odio ut. Pharetra magna ac placerat vestibulum lectus mauris ultrices. Turpis massa sed elementum tempus egestas sed sed risus pretium
+            A fusion of wood,<br/>
+            Brass unites, sunglasses rest,<br/>
+            Functional art piece.
+            </p>
+            <p>
+            Two walnut pillows,<br/>
+            Brass bridge spanning space between,<br/>
+            Sunglasses find home.<br/>
+            </p>
+            <p>
+            Nature and metal,<br/>
+            Sculpted holder of sunlight,<br/>
+            Your shades' haven true.
             </p>
 
-            <a href="google.com" target="_blank">Test</a>
+            {/* <a href="google.com" target="_blank">Test</a> */}
         </PostLayout>
     )
 }

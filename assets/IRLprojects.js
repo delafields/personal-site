@@ -5,9 +5,10 @@ const IRLprojectsData = [
     coverImgSrc: '/projectImages/sunglass-blobs.jpeg',
     pageLink: 'sunglass-blobs',
     links: [],
-    images: [
-      '/projectImages/sunglass-blobs.jpeg', '/projectImages/rawry.jpeg', '/projectImages/coffee-table.jpeg', 
-      '/projectImages/garden-box.jpeg', '/projectImages/hat-racks.jpg', '/projectImages/bike-strap.jpg']
+    // images: [
+    //   '/projectImages/sunglass-blobs.jpeg', '/projectImages/rawry.jpeg', '/projectImages/coffee-table.jpeg', 
+    //   '/projectImages/garden-box.jpeg', '/projectImages/hat-racks.jpg', '/projectImages/bike-strap.jpg'
+    // ]
   },
   {
     title: 'Glasses Things',

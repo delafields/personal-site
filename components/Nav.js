@@ -1,4 +1,5 @@
 import { Fragment, useState, useEffect, useCallback } from 'react';
+import Link from 'next/link';
 import { Popover, Transition } from '@headlessui/react';
 import { GiHamburgerMenu } from "react-icons/gi";
 import SocialLinks from './SocialLinks';
@@ -6,7 +7,7 @@ import SocialLinks from './SocialLinks';
 const solutions = [
   {name: 'home', href: '/'},
   {name: 'projects', href: '/projects'},
-  {name: 'store', href: '/store'},
+  {name: 'shop', href: '/shop'},
   {name: 'tunes', href: '/tunes' }
 ];
 
@@ -44,7 +45,7 @@ export const Nav = () => {
     <Popover className={ (open ? 'bg-white sticky top-0 z-50 visible transition-2 ease-in-out delay-150 duration-300' : 'invisible')}>
       <div className='px-6'>
         <div className='flex justify-between py-6'>
-          <h1>super secret workshop</h1>
+          <Link href='/'>super secret workshop</Link>
           <Popover.Group as='nav' className='space-x-10'>
             <Popover className='relative'>
               {({ open }) => (

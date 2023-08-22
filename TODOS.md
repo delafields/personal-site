@@ -1,7 +1,8 @@
 
 
 Now
-1. Create pages for projects that deserve it, add images to each project in projectsData
+1. Move shop stuff to lemon squeezy
+   1. Test overlay vs hosted shop
 2. Switchover to SSW on prod branch, remove from resume
 
 Later

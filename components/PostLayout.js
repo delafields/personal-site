@@ -1,3 +1,4 @@
+import React from "react";
 import ProjectWrapper from "../components/ProjectWrapper";
 import SocialLinks from "./SocialLinks";
 import { useRouter } from 'next/router';
@@ -10,8 +11,8 @@ export default function PostLayout({ children }) {
     const pageLink = router.pathname.split("/").pop();
     let project = IRLprojectsData.filter(project => project.pageLink == pageLink)[0];
     let [images, setImages] = useState({
-        currentImage: project.images[0],
-        otherImages: project.images.slice(1)
+        currentImage: project.images ? project.images[0] : project.coverImgSrc,
+        otherImages: project.images ? project.images.slice(1) : false
     })
 
     const imageChanger = (selectedImage) => {
@@ -26,11 +27,28 @@ export default function PostLayout({ children }) {
 
     }
 
+    const ExtraImageContainer = () => (
+        <>
+            {images.otherImages.map((image, index) =>
+                <div 
+                    className="cursor-pointer"
+                    onClick={() => imageChanger(image)}>
+                    <Image
+                        key={index}
+                        src={image}
+                        width={56} 
+                        height={48}/>
+                </div>
+            )}
+        </>
+      )
+
     return (
         <ProjectWrapper pageTitle={project.title}>
-            <div className="z-20 flex flex-col items-center w-full px-6 mb-8 md:items-stretch md:justify-center grow md:flex-row">
+            <div className="flex flex-col items-center w-full h-[75vh] px-6 mb-8 md:items-stretch md:justify-center grow md:flex-row">
                 
                 <div className="flex flex-col items-center w-full py-4 md:mt-12 md:w-1/3 rounded-2xl bg-noise md:gap-y-2 bg-white/90 h-fit">
+                    
                     <div className="relative w-4/5 h-96">
                         <Image
                         src={images.currentImage}
@@ -38,24 +56,16 @@ export default function PostLayout({ children }) {
                         objectFit="contain"
                         />
                     </div>
+                    
                     <div className="flex px-2 gap-x-2">
-                        {images.otherImages.map((image, index) =>
-                            <div 
-                                className="cursor-pointer"
-                                onClick={() => imageChanger(image)}
-                            >
-                                <Image
-                                    key={index}
-                                    src={image}
-                                    width={56} 
-                                    height={48} 
-                                />
-                            </div>
-                        )}
+                        {images.otherImages ? <ExtraImageContainer/> : null
+                    }
                     </div>
+                
                 </div>
                 
                 <div className="flex flex-col px-6 mx-2 mt-8 md:w-2/3 bg-white/90 md:mt-0">
+                    
                     <h1 className="my-6 text-2xl font-bold text-center text-myred">
                         {project.title}
                     </h1>
