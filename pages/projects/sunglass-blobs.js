@@ -2,7 +2,7 @@ import PostLayout from "../../components/PostLayout"
 
 export default function Post({}) {
     return (
-        <PostLayout>
+        <PostLayout type="projects">
             <p>
             Walnut's gentle grace,<br/>
             Brass bridge between twin blobs stands,<br/>

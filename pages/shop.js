@@ -15,13 +15,13 @@ export default function Shop() {
             </h1>
         </div>
         <div className="z-20 flex flex-col items-center gap-8 pt-8 sm:flex-row sm:flex-wrap sm:justify-center sm:items-stretch">
-            {shopItems.map((irlProject, irlIndex) =>
-            <ProjectCard
-                key={irlIndex}
-                {...irlProject}
-            />
-            )
-            }
+            {shopItems.map((shopItem, index) =>
+              <ProjectCard
+                  key={index}
+                  type="shop"
+                  {...shopItem}
+              />
+            )}
         </div>
       </div>
 

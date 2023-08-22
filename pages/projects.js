@@ -25,6 +25,7 @@ export default function Projects() {
           {IRLprojectsData.map((irlProject, irlIndex) =>
             <ProjectCard
               key={irlIndex}
+              type="projects"
               {...irlProject}
             />
             )
@@ -40,6 +41,7 @@ export default function Projects() {
           {codeProjectsData.map((codeProject, codeIndex) =>
             <ProjectCard
               key={codeIndex}
+              type="projects"
               {...codeProject}
             />
             )

@@ -1,8 +1,8 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import StripeButton from './StripeButton';
+import { BuyButton } from './BuyButton'
 
-export default function ProjectCard({ ...project }) {
+export default function ProjectCard({ type, ...project }) {
 
   const ProjectCardDetails = () => (
     <>
@@ -19,11 +19,15 @@ export default function ProjectCard({ ...project }) {
           : null 
         }
         <div className="flex flex-col justify-around grow">
+
           <div className="my-2 text-center">
+
             <h5 className="font-bold underline uppercase lg:text-2xl">
               {project.title}
             </h5>
+
             <p>{project.caption}</p>
+
             {project.links.map(({ linkName, linkUrl }) => 
               <Link href={linkUrl} key={linkUrl}>
                 <a 
@@ -34,12 +38,11 @@ export default function ProjectCard({ ...project }) {
                 </Link>
               )
             }
+            
           </div>
-        {project.product 
-              // ? <StripeButton priceId={product.priceId} buttonName={product.buttonName} /> 
-              ? <StripeButton product={project.product} />
-              : null
-            }
+
+        {project.product ? <BuyButton {...project.product} /> : null}
+
       </div>
     </>
   )
@@ -49,7 +52,7 @@ export default function ProjectCard({ ...project }) {
     {
       project.pageLink ? (
         <Link 
-          href={`/projects/${encodeURIComponent(project.pageLink)}`} 
+          href={`/${type}/${encodeURIComponent(project.pageLink)}`}
           className='cursor-pointer'
         >
           <a className="flex flex-col w-3/4 max-w-md p-2 rounded-lg shadow-md bg-noise sm:w-1/2 md:1/4 max-h-[30rem] hover:shadow-lg">

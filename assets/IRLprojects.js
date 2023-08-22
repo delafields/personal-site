@@ -22,9 +22,7 @@ const IRLprojectsData = [
     coverImgSrc: '/projectImages/rawry.jpeg',
     links: [
       { linkName: 'imgur', linkUrl: 'https://imgur.com/gallery/gZXafL8' },
-      // { linkName: 'FREE PLANS', linkUrl: '/products/SSW HAT RACK PLANS.pdf' }
-    ]
-    // product: {priceId: 'price_1N8pViK6OFnrBRcNPeZhJcKn', buttonName: 'BUY TEMPLATE', file: 'SSW HAT RACK TEMPLATE.pdf'}
+    ],
   },
   {
     title: 'Walnut MCM media console',
