@@ -1,8 +1,61 @@
-@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet');
+@import url('https://fonts.googleapis.com/css2?family=Lexend&display=swap');
+@import "tailwindcss";
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@theme {
+  --font-serif: 'Lexend', ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+
+  --color-myred: #ff0000;
+  --color-mycream: #fef8ee;
+
+  --breakpoint-xs: 475px;
+
+  --width-wscreenborder: calc(100vw - 40px);
+  --height-hscreenborder: calc(100vh - 40px);
+}
+
+@utility bg-paper {
+  background-image: url(/bgImages/natural-paper.png);
+}
+
+@utility bg-stripes {
+  background-image: url(/bgImages/background-stripes.svg);
+}
+
+@utility bg-paper-stripes {
+  background-image: url(/bgImages/natural-paper.png), url(/bgImages/background-stripes.svg);
+}
+
+@utility bg-noise {
+  background-image: url(/bgImages/noise.png);
+}
+
+@utility bg-blob1 {
+  background-image: url(/bgImages/haikei-blob1.svg);
+}
+
+@utility bg-blob2 {
+  background-image: url(/bgImages/haikei-blob2.svg);
+}
+
+@utility bg-blob-png {
+  background-image: url(/bgImages/blob-png.png);
+}
+
+@utility cursor-drill {
+  cursor: url(/cursors/Drill.cur), pointer;
+}
+
+@utility cursor-imac {
+  cursor: url(/cursors/IMAC.cur), pointer;
+}
+
+@utility cursor-music {
+  cursor: url(/cursors/music.cur), pointer;
+}
+
+@utility border-20 {
+  border-width: 20px;
+}
 
 html,
 body {
@@ -13,27 +66,7 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
 
 * {
   box-sizing: border-box;
 }
-
-/* 
-keeping this around in case anything breaks with the rainbow
-#rainbow {
-  position: fixed;
-  top: 0px;
-  left: 0px;
-  z-index: 999;
-  width: 100vw;
-  opacity: 0.25;
-  pointer-events: none;
-  transform: translateY(0px);
-  filter: contrast(120%) brightness(120%);
-  display: inline-block;
-  vertical-align: middle;
-} */

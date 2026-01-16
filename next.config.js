@@ -1,15 +1,7 @@
 /** @type {import('next').NextConfig} */
-// next.config.js
-module.exports = {
-  webpack(config, options) {
-    config.module.rules.push({
-      test: /\.(mp3)$/,
-      type: "asset/resource",
-      generator: {
-        filename: "static/chunks/[path][name].[hash][ext]",
-      },
-    });
-    
-    return config;
-  },
-};
+const nextConfig = {
+  // Enable Turbopack for dev (already in script)
+  // Audio files are now handled by default asset loading
+}
+
+module.exports = nextConfig

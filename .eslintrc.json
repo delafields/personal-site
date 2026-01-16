@@ -1,5 +1,6 @@
 {
   "extends": "next/core-web-vitals",
-  // songs with apostrophes were throwing off the linter, disable
-  "rules": { "react/no-unescaped-entities": 0 }
+  "rules": {
+    "react/no-unescaped-entities": 0
+  }
 }
