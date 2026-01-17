@@ -57,6 +57,21 @@
   border-width: 20px;
 }
 
+@keyframes pulse-attention {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.5;
+    transform: scale(1.2);
+  }
+}
+
+@utility animate-pulse-attention {
+  animation: pulse-attention 2s ease-in-out infinite;
+}
+
 html,
 body {
   height: 100%;
