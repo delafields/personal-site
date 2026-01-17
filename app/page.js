@@ -14,45 +14,45 @@ export default function Home() {
       <main
         className="w-screen h-screen text-center sm:text-left py-2 grid grid-rows-[1fr_2fr_1fr] sm:grid-rows-[1fr_4fr_1fr] font-['Lexend']"
       >
-        <div className="sm:pt-4 sm:pl-6 flex flex-wrap items-center gap-x-4 gap-y-1 w-fit">
-          <p className='font-bold text-lg w-full'>JEREMY FIELDS</p>
-          <Link
-            href="/experience"
-            className="font-bold text-myred hover:opacity-60"
-          >
-            work
-          </Link>
-          <a
-            className="text-xl text-myred hover:opacity-60"
-            href="https://github.com/delafields"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <BsGithub/>
-          </a>
+        <div className="flex flex-col items-center pt-12 sm:pt-4 sm:pl-6 sm:w-fit">
+          <p className="text-4xl font-['Staatliches'] tracking-wide">JEREMY FIELDS</p>
+            <Link
+              href="/experience"
+              className="text-4xl text-myred hover:opacity-60 font-['Staatliches'] tracking-wide"
+            >
+              WORK
+            </Link>
+            <a
+              className="text-2xl text-myred hover:opacity-60"
+              href="https://github.com/delafields"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <BsGithub/>
+            </a>
         </div>
         <div></div>
         <div className="flex flex-col items-center sm:items-end sm:mr-12 sm:mb-16 gap-2">
           <Link
-            href="/IRL-projects"
-            className="text-xl font-bold text-myred hover:opacity-60 cursor-drill"
+            href="/builds"
+            className="text-4xl text-myred hover:opacity-60 cursor-drill font-['Staatliches'] tracking-wide"
             onMouseEnter={playDrill}
           >
-            builds
+            BUILDS
           </Link>
           <Link
-            href="/code-projects"
-            className="text-xl font-bold text-myred hover:opacity-60 cursor-imac"
+            href="/code"
+            className="text-4xl text-myred hover:opacity-60 cursor-imac font-['Staatliches'] tracking-wide"
             onMouseEnter={playKeyboard}
           >
-            code
+            CODE
           </Link>
           <Link
             href="/tunes"
-            className="text-xl font-bold text-myred hover:opacity-60 cursor-music"
+            className="text-4xl text-myred hover:opacity-60 cursor-music font-['Staatliches'] tracking-wide"
             onMouseEnter={playRecorder}
           >
-            tunes
+            TUNES
           </Link>
         </div>
       </main>

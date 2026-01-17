@@ -3,12 +3,12 @@ import ProjectCard from "../../components/ProjectCard"
 import projectsData from "../../assets/IRLprojects.js"
 
 export const metadata = {
-  title: "Jeremy's IRL projects",
+  title: "Jeremy's builds",
 }
 
-export default function IRLProjects() {
+export default function Builds() {
   return (
-    <ProjectWrapper pageTitle="IRL projects">
+    <ProjectWrapper pageTitle="builds">
       {projectsData.map((project) =>
         <ProjectCard
           type="IRL"

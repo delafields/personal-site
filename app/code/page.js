@@ -3,12 +3,12 @@ import ProjectCard from "../../components/ProjectCard"
 import projectsData from "../../assets/codeProjects.js"
 
 export const metadata = {
-  title: "Jeremy's code projects",
+  title: "Jeremy's code",
 }
 
-export default function CodeProjects() {
+export default function Code() {
   return (
-    <ProjectWrapper pageTitle="code projects">
+    <ProjectWrapper pageTitle="code">
       {projectsData.map((project) =>
         <ProjectCard
           type="code"
