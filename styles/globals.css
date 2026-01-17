@@ -50,7 +50,7 @@
 }
 
 @utility cursor-music {
-  cursor: url(/cursors/music.cur), pointer;
+  cursor: url(/cursors/music.png) 16 16, pointer;
 }
 
 @utility border-20 {
